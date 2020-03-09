@@ -1,5 +1,6 @@
 <?php
 session_start();
 $_SESSION['log']="test";
+header('Location: accueil.php');
+exit();
  ?>
- <a href="header.php"> Retour à l'accueil </a>

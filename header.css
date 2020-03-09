@@ -1,6 +1,6 @@
 html{
   /* background-color: blue; */
-  font-family: 'Segoe UI'; 
+  font-family: 'Segoe UI';
 }
 /*===========*\
 #    HEADER    #======================================================================
@@ -8,9 +8,19 @@ html{
 header{
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  align-items: center;
+  font-size: 15px;
   background-color: white;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
+  margin-left: 3rem;
+}
+
+h1{
+  margin: 0;
+}
+
+#logo{
+  width: 5rem;
 }
 
 header div{
@@ -23,7 +33,7 @@ nav{
 }
 
 nav p {
-  margin: 0 3rem;
+  margin: 0 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
