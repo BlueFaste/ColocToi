@@ -1,0 +1,21 @@
+.apart_accueil{
+  background-image: url('img/accueil/apartment_accueil.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  padding: 16rem;
+  height: 100%
+}
+
+h2{
+  font-family: Tahoma;
+  font-size: 40px;
+}
+
+input{
+  font-family: 'Trajan Pro 3';
+  padding: 0.5rem 1.5rem ;
+  background-color: white;
+  border: solid 1px #C3C3C3;
+}

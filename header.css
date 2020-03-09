@@ -1,0 +1,40 @@
+html{
+  /* background-color: blue; */
+  font-family: 'Segoe UI'; 
+}
+/*===========*\
+#    HEADER    #======================================================================
+\*===========*/
+header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: white;
+  padding: 2rem 0rem;
+}
+
+header div{
+  margin-left: 1rem;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav p {
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+nav img{
+  width: 1.5rem;
+  margin: 0 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
