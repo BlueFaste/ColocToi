@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://use.typekit.net/phy2ehf.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script>
     <title><?php echo $pageName ?></title>
   </head>
   <body>

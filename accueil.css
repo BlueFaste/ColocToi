@@ -1,15 +1,38 @@
-.apart_accueil{
+.trajan{
+font-family: trajan-pro-3, serif;
+}
+
+.worker{
+  font-family: Worker;
+}
+
+.apart_accueil, .int_accueil{
   background:no-repeat center center #707070;
   background-size: cover;
+  text-align: center;
+  height: 529px;
+}
+
+.apart_accueil{
   background-image: url('img/accueil/apartment_accueil.jpg');
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-  /* padding: 16rem; */
-  height: 529px;
-  /* width:1920px; */
+}
 
+.int_accueil{
+  margin-top:2rem;
+  background-image: url('img/accueil/interieur_accueil.jpg');
+
+}
+.int_accueil h2{
+  margin-bottom: 0rem;
+  padding-top:12rem;
+  font-size:3rem;
+}
+.int_accueil p{
+  font-size: 1rem;
+  margin-bottom: 4rem;
 }
 
 h2{
@@ -18,7 +41,6 @@ h2{
 }
 
 input{
-  font-family: 'Trajan Pro 3';
   padding: 0.5rem 1.5rem ;
   background-color: white;
   border: solid 1px #C3C3C3;
@@ -31,4 +53,98 @@ input{
 
 .content-img-accueil-inp{
   margin-right: 20rem;
+}
+
+.info{
+  background-color: #E9F4FF;
+  padding: 1rem;
+}
+
+.info>p{
+  text-align: right;
+}
+
+.news{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.why_coloc{
+  display: flex;
+  padding: 5rem 10rem;
+}
+
+.apart_int{
+  flex: 0 0 auto;
+  background:no-repeat center center #707070;
+  background-image: url('img/accueil/apart_int.jpg');
+  background-size: cover;
+  width: 40% ;
+  margin-right: 1em;
+}
+
+.why_coloc div{
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+h3{
+  margin-top: 0;
+  font-size:30px;
+  font-family: Tahoma;
+}
+
+.why_coloc p{
+  margin-left: 1rem;
+  margin-right: 10rem;
+  font-size:19px;
+}
+
+.search_coloc>h3{
+  margin-left: 14rem;
+  margin-bottom: 3rem;
+}
+
+.coloc{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.coloc div{
+  text-align: center;
+}
+
+.trait{
+  width: 3px;
+  height: 32rem;
+  background-color: #D4D4D4;
+  margin: 0rem 2rem;
+
+}
+
+.search_coloc img{
+  width:270px;
+}
+
+.div_apart{
+  margin-top:3rem;
+}
+
+.choix{
+  background-color: white;
+  padding: 1rem;
+  border: solid 1px black;
+  margin-right: 10rem;
+  margin-top: 6rem;
+}
+
+.div_choix{
+  background-color: white;
+  padding: 6rem 2rem;
+  border: solid 1px black;
+
 }
