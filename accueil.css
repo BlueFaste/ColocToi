@@ -1,6 +1,6 @@
 .apart_accueil{
   background:no-repeat center center #707070;
-  background-size: contain;
+  background-size: cover;
   background-image: url('img/accueil/apartment_accueil.jpg');
   display: flex;
   flex-direction: column;
