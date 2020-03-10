@@ -2,6 +2,7 @@ html{
   /* background-color: blue; */
   font-family: 'Segoe UI';
 }
+
 /*===========*\
 #    HEADER    #======================================================================
 \*===========*/
@@ -20,7 +21,7 @@ h1{
 }
 
 #logo{
-  width: 5rem;
+  width: 3rem;
 }
 
 header div{
@@ -47,4 +48,25 @@ nav img{
 a{
   text-decoration: none;
   color: black;
+  cursor: pointer;
+}
+
+
+/*=============================*\
+#    COMMUNS AUX AUTRES PAGES    #======================================================================
+\*=============================*/
+
+input{
+  padding: 0.5rem 1.5rem ;
+  background-color: white;
+  border: solid 1px #C3C3C3;
+  cursor: pointer;
+}
+
+.trajan{
+font-family: trajan-pro-3, serif;
+}
+
+.worker{
+  font-family: Worker;
 }

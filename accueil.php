@@ -3,13 +3,13 @@
 
     <div class="apart_accueil">
       <h2 class="content-img-accueil-text"> Vous recherchez <br> un coloc ? </h2>
-      <input type="submit" name="" value="Découvrir" formaction="" class="content-img-accueil-inp trajan">
+      <a href="" ><input type="submit" name="" value="Découvrir" class="content-img-accueil-inp trajan"></a>
     </div>
 
     <div class="int_accueil">
       <h2 class=""> Vous recherchez une colocation ? </h2>
       <p class="trajan"> Trouver une colocation de confiance avec ColocToi </p>
-      <input type="submit" name="" value="Découvrir" formaction="" class="trajan">
+      <a href="recherche_colocation.php" ><input type="submit" name="" value="Découvrir" class="trajan"></a>
     </div>
 
     <section class="info">
@@ -41,7 +41,7 @@
           <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam es</p>
       </div>
     </section>
-
+<!-- voir avec les composants -->
     <section class="search_coloc">
       <h3> Ils recherchent un colocataire ! </h3>
       <div class="coloc">
@@ -56,7 +56,7 @@
           <img src="img/accueil/fille.jpg" alt="">
           <p>Prénom nom</p>
           <p>Ville</p>
-          <input type="submit" name="" value="Voir" class="trajan ">
+          <input type="submit" name="" value="Voir" class="trajan">
         </div>
         <div class="trait"></div>
         <div class="">
@@ -77,12 +77,10 @@
       </div>
     </div>
 
-    <?php include('footer.php') ?>
-  </body>
+<?php include('footer.php') ?>
 
   <script type="text/javascript">
     $(document).ready(function(){
       $('head').append('<link rel="stylesheet" href="accueil.css">');
     })
   </script>
-</html>

@@ -1,10 +1,9 @@
-.trajan{
-font-family: trajan-pro-3, serif;
-}
+/* Pour du texte responsive utilisé vw comme unité */
 
-.worker{
-  font-family: Worker;
-}
+
+/*====================================================*\
+#    RECHERCHE UN COLOC ET RECHERGER UNE COLOCATION    #======================================================================
+\*====================================================*/
 
 .apart_accueil, .int_accueil{
   background:no-repeat center center #707070;
@@ -40,12 +39,6 @@ h2{
   font-size: 60px;
 }
 
-input{
-  padding: 0.5rem 1.5rem ;
-  background-color: white;
-  border: solid 1px #C3C3C3;
-}
-
 .content-img-accueil-text{
   margin-right: 10rem;
   margin-top: 10rem;
@@ -55,6 +48,9 @@ input{
   margin-right: 20rem;
 }
 
+/*=========*\
+#    INFO    #======================================================================
+\*=========*/
 .info{
   background-color: #E9F4FF;
   padding: 1rem;
@@ -71,6 +67,10 @@ input{
   text-align: center;
   font-size: 2rem;
 }
+
+/*====================================*\
+#    POURQUOI FAIRE DE LA COLOCATION    #======================================================================
+\*====================================*/
 
 .why_coloc{
   display: flex;
@@ -103,6 +103,10 @@ h3{
   font-size:19px;
 }
 
+/*===============================*\
+#    RECHERCHENT UN COLOCATAIRE    #======================================================================
+\*===============================*/
+
 .search_coloc>h3{
   margin-left: 14rem;
   margin-bottom: 3rem;
@@ -130,6 +134,9 @@ h3{
   width:270px;
 }
 
+/*=================*\
+#    NOUS CHOISIR    #======================================================================
+\*=================*/
 .div_apart{
   margin-top:3rem;
 }

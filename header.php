@@ -12,7 +12,7 @@
   <body>
     <header>
       <h1 class="">
-        <a href="accueil.php"><img src="img/header/LOGO-FINAL-FINAL-V3.jpg" alt="ColocToi - Trouve ta colocation" id="logo"/></a>
+        <a href="accueil.php"><img src="img/header/LOGO_FINAL.png" alt="ColocToi - Trouve ta colocation" id="logo"/></a>
       </h1>
       <nav class="">
         <p><img src="img/header/loupe_recherche.png"/> Recherche </p>
