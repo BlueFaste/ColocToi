@@ -20,18 +20,18 @@
 }
 
 .int_accueil{
-  margin-top:2rem;
+  margin-top:2vw;
   background-image: url('img/accueil/interieur_accueil.jpg');
 
 }
 .int_accueil h2{
-  margin-bottom: 0rem;
-  padding-top:12rem;
-  font-size:3rem;
+  margin-bottom: 0vw;
+  padding-top:12vw;
+  font-size:3vw;
 }
 .int_accueil p{
-  font-size: 1rem;
-  margin-bottom: 4rem;
+  font-size: 1vw;
+  margin-bottom: 4vw;
 }
 
 h2{
@@ -40,12 +40,12 @@ h2{
 }
 
 .content-img-accueil-text{
-  margin-right: 10rem;
-  margin-top: 10rem;
+  margin-right: 10vw;
+  margin-top: 10vw;
 }
 
 .content-img-accueil-inp{
-  margin-right: 20rem;
+  margin-right: 20vw;
 }
 
 /*=========*\
@@ -53,7 +53,7 @@ h2{
 \*=========*/
 .info{
   background-color: #E9F4FF;
-  padding: 1rem;
+  padding: 1vw;
 }
 
 .info>p{
@@ -63,9 +63,9 @@ h2{
 .news{
   display: flex;
   justify-content: space-between;
-  margin: 0 6rem;
+  margin: 0 6vw;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 /*====================================*\
@@ -74,7 +74,7 @@ h2{
 
 .why_coloc{
   display: flex;
-  padding: 5rem 10rem;
+  padding: 5vw 10vw;
 }
 
 .apart_int{
@@ -87,8 +87,8 @@ h2{
 }
 
 .why_coloc div{
-    margin-left: 2rem;
-    padding-bottom: 3rem;
+    margin-left: 2vw;
+    padding-bottom: 3vw;
 }
 
 h3{
@@ -98,8 +98,8 @@ h3{
 }
 
 .why_coloc p{
-  margin-left: 1rem;
-  margin-right: 10rem;
+  margin-left: 1vw;
+  margin-right: 10vw;
   font-size:19px;
 }
 
@@ -108,8 +108,8 @@ h3{
 \*===============================*/
 
 .search_coloc>h3{
-  margin-left: 14rem;
-  margin-bottom: 3rem;
+  margin-left: 14vw;
+  margin-bottom: 3vw;
 }
 
 .coloc{
@@ -124,9 +124,9 @@ h3{
 
 .trait{
   width: 3px;
-  height: 32rem;
+  height: 32vw;
   background-color: #D4D4D4;
-  margin: 0rem 2rem;
+  margin: 0vw 2vw;
 
 }
 
@@ -138,20 +138,20 @@ h3{
 #    NOUS CHOISIR    #======================================================================
 \*=================*/
 .div_apart{
-  margin-top:3rem;
+  margin-top:3vw;
 }
 
 .choix{
   background-color: white;
-  padding: 1rem;
+  padding: 1vw;
   border: solid 1px black;
-  margin-right: 10rem;
-  margin-top: 6rem;
+  margin-right: 10vw;
+  margin-top: 6vw;
 }
 
 .div_choix{
   background-color: white;
-  padding: 6rem 2rem;
+  padding: 6vw 2vw;
   border: solid 1px black;
 
 }

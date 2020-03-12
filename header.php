@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="https://use.typekit.net/phy2ehf.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!--feuille de style jquery ui-->
+    <link rel="stylesheet" href="/resources/demos/style.css"> <!--feuille de style jquery ui-->
+    <link rel="stylesheet" href="https://use.typekit.net/phy2ehf.css"> <!-- implantation font adobe-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script>
     <title><?php echo $pageName ?></title>
   </head>

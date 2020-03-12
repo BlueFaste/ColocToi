@@ -1,7 +1,7 @@
 footer{
   background-color: #C3C3C3;
   font-weight: lighter;
-  padding: 1rem;
+  padding: 1vw;
 
 }
 
@@ -9,7 +9,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 20rem;
+  padding: 1vw 20vw;
 
 }
 
@@ -19,7 +19,7 @@ footer{
 }
 
 .footer_down>p{
-  margin-left: 20rem;
+  margin-left: 20vw;
   font-size: 10px;
 }
 
@@ -29,7 +29,7 @@ footer{
 }
 
 .langue>label{
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 
 .langue select{
@@ -37,12 +37,12 @@ footer{
 }
 
 .RS{
-  margin-right: 1rem;
+  margin-right: 1vw;
   align-self: flex-end;
   display: flex;
 }
 
 .RS img{
-  width: 2rem;
+  width: 2vw;
 
 }
