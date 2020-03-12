@@ -12,15 +12,15 @@
 
 
     <div class="fond">
-        
-    
+
+
         <div class="squarefond">
 
         <p class="paradedebus">Création de compte :<p>
         <!-- changer le nom de la page ci dessous -->
-            <form action="inscriptions" method="post" class="flexformulaireinscription"> 
+            <form action="inscriptions" method="post" class="flexformulaireinscription">
 
-                
+
 
                 <label for="seco" class="formelement">S'inscrire avec</label>
                 <select id="seco" name="moyensDeConnexion">
@@ -28,10 +28,10 @@
                     <option value="Twitter" class="Twitter">Twitter</option>
                     <option value="Google" class="Google">Google</option>
                 </select>
-                <p>ou</p> 
+                <p>ou</p>
 
                 <label for="mailregister" class="formelement">Entrez votre adresse E-mail</label>
-                <input type="email" name="mailregister" requiered >
+                <input type="email" name="mailregister" required >
 
                 <div class="centrezmoica"><input type="submit" value="Suivant" class="boutoninscript ; formelement"></div>
 

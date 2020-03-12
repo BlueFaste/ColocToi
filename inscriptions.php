@@ -12,21 +12,21 @@
 
 
     <div class="fond">
-        
-    
+
+
         <div class="squarefond">
         <p class="paradedebus">Création de compte :<p>
         <!-- changer le nom de la page ci dessous -->
-            <form action="verificationdinscription.php" method="post" class="flexformulaireinscriptions"> 
-                       
+            <form action="verificationdinscription.php" method="post" class="flexformulaireinscriptions">
+
                 <div class="supp">
                     <div class="inte">
                         <label for="nomregister" class="formelement">Nom :</label>
-                        <input type="text" requiered name="nomregister">
+                        <input type="text" required name="nomregister">
                     </div>
                     <div class="inte">
                         <label for="prenomregister" class="formelement" style="padding-left: 5%">Prenom :</label>
-                        <input type="text" requiered name="prenomregister" class="spaceleft">
+                        <input type="text" required name="prenomregister" class="spaceleft">
                     </div>
                 </div>
 
@@ -39,11 +39,11 @@
                       <input type="number"  name="year" value="2000" min="1900" max="2002" class="spaceleft">
                     </div>
                 </div>
-    
-                
+
+
                 <div class="inte; spaceleft">
                 <div class="spaceleftandtopbis">Mot de passe :</div>
-                <div class="spaceleft"><input type="password" requiered name="mdpregister"></div>
+                <div class="spaceleft"><input type="password" required name="mdpregister"></div>
                 </div>
 
 

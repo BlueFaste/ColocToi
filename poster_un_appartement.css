@@ -1,0 +1,96 @@
+.apart_accueil{
+  background:no-repeat center center #707070;
+  background-size: cover;
+  text-align: center;
+  height: 529px;
+  background-image: url('img/poster_une_annonce/apartment_poster_annonce.jpg');
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-img-accueil-text{
+  margin-right: 10vw;
+  margin-top: 8vw;
+  margin-bottom: 1vw;
+}
+
+.formulaire_poste{
+
+  padding: 2vw 30vw;
+}
+
+h2{
+  font-family: Tahoma;
+  font-size: 60px;
+}
+
+.formulaire_poste label{
+  margin-left: 1vw;
+}
+
+.annonce{
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 3vw;
+  font-weight: bold;
+  margin-top: 1vw;
+  margin-bottom: 5vw;
+}
+
+form .formulaire_poste div{
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 35vw; */
+}
+
+.formulaire_poste input, .formulaire_poste select {
+  height: 2vw;
+  margin: 1vw;
+  margin-bottom: 2vw;
+}
+.formulaire_poste select{
+  height: 3vw;
+}
+
+textarea{
+  margin: 1vw;
+  margin-bottom: 2vw;
+}
+
+.div_ajout_img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ajout_self{
+  border: solid 1px black;
+  padding:4vw 3vw;
+}
+
+.icone{
+  width:7vw;
+}
+
+.input_val{
+  text-align: center;
+  margin: 3vw 0;
+}
+
+.ajout_img{
+  margin: 0 4vw;
+}
+
+.ajout_img p{
+  font-size: 2vw;
+  font-family: Tahoma;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 5vw;
+  margin-bottom: 1vw;
+}
+
+.test{
+  margin-left: 5vw;
+  margin-bottom: 1vw;
+}

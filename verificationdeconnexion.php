@@ -7,9 +7,9 @@ include('lienversbdd.php');
 
 if(isset($_POST['verifmail'],$_POST['verifmdp']))
 {
-   
 
-        $verif = false; 
+
+        $verif = false;
 
 
         $rem = $connexion -> prepare('SELECT * FROM membre ORDER BY id DESC');
@@ -22,7 +22,7 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
             $mail = $ligne->mail;
             $mdp = $ligne->mdp;
 
-            if( ($_POST['verifmail'] == $mail) && ($_POST['verifmdp'] == $mdp) )
+            if( ($_POST['verifmail'] == $mail) && (password_verify($_POST['verifmdp'],$mdp)) )
             {
                 $verif = true;
             break;
@@ -38,6 +38,7 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
     {
         echo "vous êtes connecté(e) ! <a href='accueil.php'>Cliquez ici pour revenir a la page d'accueil</a>";
         $_SESSION['log'] = true;
+        header('Location: accueil.php');
     }
     else
     {

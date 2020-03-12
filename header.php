@@ -18,17 +18,17 @@
         <a href="accueil.php"><img src="img/header/LOGO_FINAL.png" alt="ColocToi - Trouve ta colocation" id="logo"/></a>
       </h1>
       <nav class="">
-        <p><img src="img/header/loupe_recherche.png"/> Recherche </p>
+        <p><a href="recherche_colocation.php"><img src="img/header/loupe_recherche.png"/></a><a href="recherche_colocation.php"> Recherche </a></p>
         <p><a href="" > Faites-nous confiance </a></p>
-        <p><a href="" > Poster </a></p>
+        <p><a href="poster_un_appartement.php" > Poster </a></p>
         <?php if(!empty($_SESSION['log'])){ ?>
           <p><a href="" > Mes publications </a></p>
           <p><a href="" > Mon compte </a></p>
           <p id="logOut"><a href="logOut.php"> Déconnexion </a></p>
           <?php }
           else{ ?>
-        <p><a href="logIn.php" > Connexion </a></p>
-        <p><a href="" > Inscription </a></p>
+        <p><a href="connexion.php" > Connexion </a></p>
+        <p><a href="Inscriptionf.php" > Inscription </a></p>
         <?php } ?>
       </nav>
 
