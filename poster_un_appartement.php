@@ -10,23 +10,23 @@ else{?>
 </div>
 
   <p class="annonce"> Poster une annonce </p>
-  <form class="" action="traitement_poster_appartement.php" method="post">
+  <form class="" action="traitement_poster_appartement.php" method="post" enctype="multipart/form-data">
     <div class="formulaire_poste">
     <div>
       <label for="titre">Titre : </label>
-      <input type="text" name="titre" id="titre" placeholder="Titre de votre annonce" value="" required>
+      <input type="text" name="titre" id="titre" placeholder="Titre de votre annonce" value="test" required>
     </div>
     <div>
       <label for="ville">Ville : </label>
-      <input type="text" name="ville" id="ville" placeholder="Ville de votre logement" value="" required>
+      <input type="text" name="ville" id="ville" placeholder="Ville de votre logement" value="test" required>
     </div>
     <div>
       <label for="adresse">Adresse : </label>
-      <input type="text" name="adresse" id="adresse" placeholder="Adresse de votre logement" value="" required>
+      <input type="text" name="adresse" id="adresse" placeholder="Adresse de votre logement" value="test" required>
     </div>
     <div>
       <label for="code_postal">Code postal : </label>
-      <input type="number"  min="01000" name="code_postal" id="code_postal" placeholder="Code postal de votre logement" value="" required>
+      <input type="number"  min="01000" name="code_postal" id="code_postal" placeholder="Code postal de votre logement" value="12000" required>
     </div>
     <div>
       <label for="type_logement">Type de logement : </label>
@@ -38,19 +38,19 @@ else{?>
     </div>
     <div>
       <label for="superficie">Superficie : </label>
-      <input type="text" name="superficie" id="superficie" placeholder="Superficie de votre logement" value="" required>
+      <input type="number"  min="1" name="superficie" id="superficie" placeholder="Superficie de votre logement" value="12" required>
     </div>
     <div>
       <label for="nb_piece">Nombre de pièce (salle de bain exclue) : </label>
-      <input type="number"  min="1" name="nb_piece" id="nb_piece" placeholder="Nombre de pièce de votre logement" value="" required>
+      <input type="number"  min="1" name="nb_piece" id="nb_piece" placeholder="Nombre de pièce de votre logement" value="12" required>
     </div>
     <div>
       <label for="nb_coloc_poss">Nombre de colocataires maximal : </label>
-      <input type="number"  min="2" name="nb_coloc_max" id="nb_coloc_max" placeholder="Nombre de colocataires maximal de votre logement" value="" required>
+      <input type="number"  min="2" name="nb_coloc_max" id="nb_coloc_max" placeholder="Nombre de colocataires maximal de votre logement" value="12" required>
     </div>
     <div>
       <label for="nb_coloc_rech">Nombre de coloctaires recherchés : </label>
-      <input type="number"  min="1" name="nb_coloc_rech" id="nb_coloc_rech" placeholder="Nombre de colocataires recherchés de votre logement" value="" required>
+      <input type="number"  min="1" name="nb_coloc_rech" id="nb_coloc_rech" placeholder="Nombre de colocataires recherchés de votre logement" value="12" required>
     </div>
     <div>
       <label for="meuble">Meublé : </label>
@@ -62,11 +62,11 @@ else{?>
     </div>
     <div>
       <label for="loyer">Loyer (sans charges) : </label>
-      <input type="text" name="loyer" id="loyer" placeholder="Loyer de votre logement" value="" required>
+      <input type="number" min="0" name="loyer" id="loyer" placeholder="Loyer de votre logement" value="23" required>
     </div>
     <div>
       <label for="charges">Charges : </label>
-      <input type="text" name="charges" id="charges" placeholder="Charges de votre logement" value="" required>
+      <input type="number" min="0" name="charges" id="charges" placeholder="Charges de votre logement" value="23" required>
     </div>
     <div>
       <label for="classe_ener">Classe énergetique : </label>
@@ -96,13 +96,18 @@ else{?>
     </div>
     <div>
       <label for="desc">Descritpion : </label>
-      <textarea name="desc" id="desc" placeholder="Description plus précise de votre logement" value="" rows="10" required></textarea>
+      <textarea name="desc" id="desc" placeholder="Description plus précise de votre logement"  rows="10" required></textarea>
     </div>
   </div>
 
   <div class="ajout_img">
     <p>Ajouter des photos</p>
-    <input type="file" name="test" accept=".jpg, .jpeg, .png" value="" class="test"/>
+    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" /> <!-- empêche l'ajout d'image dont le poids est supérieur à 1 000 000 octets à mettre pour que le $_FILES['img]['name'] marche']-->
+
+    <input type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="test"/>
+    <input type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>
+    <input type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>
+    <input type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>
     <div class="div_ajout_img">
       <div class="ajout_self">
         <img src="img/icones/appreil.png" alt="ajouter une image" class="icone">

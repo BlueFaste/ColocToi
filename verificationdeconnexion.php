@@ -24,6 +24,13 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
 
             if( ($_POST['verifmail'] == $mail) && (password_verify($_POST['verifmdp'],$mdp)) )
             {
+              $_SESSION['log']=[
+                'id'=>$ligne->id,
+                'nom'=>$ligne->nom,
+                'prenom'=>$ligne->prenom,
+                'mail'=>$mail,
+                'tel'=>$ligne->tel,
+              ];
                 $verif = true;
             break;
             }
@@ -37,7 +44,7 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
     if($verif == true)
     {
         echo "vous êtes connecté(e) ! <a href='accueil.php'>Cliquez ici pour revenir a la page d'accueil</a>";
-        $_SESSION['log'] = true;
+        // $_SESSION['log'] = true;
         header('Location: accueil.php');
     }
     else

@@ -47,7 +47,13 @@ if(isset($_POST['nomregister'],$_POST['prenomregister'],$_POST['mdpregister']))
 
             ]);
 
-            $_SESSION['log']=true;
+            $_SESSION['log']=[
+              'id'=>$ligne->id,
+              'nom'=>$ligne->nom,
+              'prenom'=>$ligne->prenom,
+              'mail'=>$mail,
+              'tel'=>$ligne->tel,
+            ];
             header('Location: accueil.php');
 
             }

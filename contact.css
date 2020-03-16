@@ -1,0 +1,135 @@
+.carre{
+  width:800px;
+  /* height:400px; */
+  background:white;
+  border: 2px solid black;
+  margin-left: 350px;
+}
+
+
+
+/*pas toucher */
+.apart_accueil{
+  background:no-repeat center center #707070;
+  background-image: url('img/recherche_colocation/appart.jpg');
+  background-size: cover;
+  height: 529px;
+
+  text-align: center;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+
+  z-index:0;
+  position:relative;
+}
+/*fin de pas toucher */
+
+.carre{
+  position:absolute;
+  z-index:1;
+  top:33vw;
+}
+
+
+
+.content-img-accueil-inp{
+  margin-right: 20vw;
+}
+
+
+
+.butt{
+  cursor:pointer;
+}
+
+
+input{
+  padding: 0.5vw 1.5vw ;
+  background-color: white;
+  border: solid 1px #C3C3C3;
+  margin-top: 20px;
+  /* cursor: pointer; */
+}
+
+
+
+.trajan{
+font-family: trajan-pro-3, serif;
+}
+
+.champ1 {
+  display: flex;
+  margin-right: -50px;
+
+}
+
+.champ2 {
+  display: flex;
+}
+
+.prenom {
+  margin-left: 50px;
+  margin-top: 30px;
+
+}
+
+.nom {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.email {
+  margin-left: 50px;
+  margin-top: 30px;  }
+
+.sujet {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.boutonConfirm {
+  margin-left: 300px;
+  margin-top: 50px;
+}
+.formulaireensemble{
+
+  margin-left: 120px;
+
+
+}
+.content-img-accueil-inp {
+
+
+  margin-left: 550px;
+  margin-top: 20px;
+}
+
+.content-img-accueil-text{
+  margin-right: 10vw;
+  margin-top: 10vw;
+  margin-bottom: 1vw;
+}
+
+.slog{
+  margin-right: 5vw;
+  font-size: 1.5vw;
+}
+
+h2{
+  font-family: Tahoma;
+  font-size: 60px;
+}
+
+.formulaireensemble p{
+  font-family: Tahoma;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+.blanc{
+  height:25vw;
+  width:100%;
+}
