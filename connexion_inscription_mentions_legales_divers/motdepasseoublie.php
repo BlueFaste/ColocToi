@@ -1,4 +1,4 @@
-<?php $pageName = 'ColocToi - Contact'; ?>
+<?php $pageName = 'ColocToi - Mot de passe oublié'; ?>
 
 <?php include('../header/header.php') ?>
 
@@ -26,8 +26,7 @@ Mot de passe oublié ?
 
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="motdepasseoublie.css">');
+    $(document).ready(function(){
+        $('head').append('<link rel="stylesheet" href="pbinscription_connexion.css">');
     })
 </script>
-

@@ -42,11 +42,8 @@
 
 
 <?php
+include('../footer/footer.php') ?>
 
-include('../lienversbdd.php');
-
-include('../footer/footer.php')
-?>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript">

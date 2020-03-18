@@ -14,10 +14,10 @@
     </div>
 
 
-<?php include('../footer/footer.php')?>
+<?php include('../footer/footer.php') ?>
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('head').append('<link rel="stylesheet" href="emailfalse.css">');
+        $('head').append('<link rel="stylesheet" href="pbinscription_connexion.css">');
     })
 </script>

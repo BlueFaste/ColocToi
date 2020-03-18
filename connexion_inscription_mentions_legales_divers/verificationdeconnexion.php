@@ -43,7 +43,7 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
 
     if($verif == "true")
     {
-        echo "vous êtes connecté(e) ! <a href='accueil.php'>Cliquez ici pour revenir a la page d'accueil</a>";
+        echo "vous êtes connecté(e) ! <a href='../accueil/accueil.php'>Cliquez ici pour revenir a la page d'accueil</a>";
         header('Location: ../accueil/accueil.php');
     }
     elseif($verif=="mailfalse")
@@ -66,6 +66,7 @@ else
 {
 echo "Hey ! Vous n'êtes pas sencés être ici !";
 echo "<br><a href='accueil.php'>Hop hop cliquez ici pour repartir</a>";
+header('location: Inscriptionf.php');
 }
 
 

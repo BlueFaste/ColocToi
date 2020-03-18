@@ -1,4 +1,4 @@
-<?php include('../header/header.php')?>
+<?php include('../header/header.php') ?>
 
     <div class="apart_accueil">
         <div class="carre">
@@ -16,9 +16,9 @@ Mot de passe incorrect
 
 
 
-<?php include('../footer/footer.php'); ?>
+<?php include('../footer/footer.php') ?>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="motdepassefalse.css">');
+    $(document).ready(function(){
+        $('head').append('<link rel="stylesheet" href="pbinscription_connexion.css">');
     })
 </script>

@@ -130,22 +130,22 @@
 
     <div class="formulaireensemble">
         <img src="../img/questions/questions4.png" class="questions5"/>
-        <form class="formulaire" method="post" action="traitement_contact.php">
+        <form class="formulaire" method="post" action="../contact/traitement_contact.php">
             <div class="champ1">
                 <div class="nom">
                     <label>Nom:</label><br>
-                    <input type="text" name="nom" placeholder="Votre nom" required autofocus>
+                    <input type="text" name="nom" placeholder="Votre nom" id="name" required >
                 </div>
                 <div class="prenom">
                     <label>Prenom:</label><br>
-                    <input type="text" name="prenom" placeholder="Votre prenom" required>
+                    <input type="text" name="prenom" placeholder="Votre prenom" id="firstName" required>
                 </div>
             </div>
             <div class="champ2">
 
                 <div class="email">
                     <label>Email:</label><br>
-                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="email" name="email" placeholder="Votre email" id="mail" required>
                 </div>
 
                 <div class="sujet">
@@ -173,4 +173,11 @@
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="questions.css">');
     })
+
+    <?php if (!empty($_SESSION['log'])){ ?>
+    //Permet de mettre automatique le nom prenom et mail dans les cases si l'utilisateur est connecté.
+    $('#name').attr('value', '<?php echo $_SESSION['log']['nom'] ?>');
+    $('#firstName').attr('value', '<?php echo $_SESSION['log']['prenom'] ?>');
+    $('#mail').attr('value', '<?php echo $_SESSION['log']['mail'] ?>');
+    <?php  } ?>
 </script>

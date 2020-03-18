@@ -72,8 +72,8 @@ ALTER TABLE `question`
 
 
 INSERT INTO `membre` (`nom`, `prenom`, `mail`, `mdp`, `tel`)
-VALUES ("LeClement", "Alice", 'alice.leclem@gmail.com', "123", "0634510976"),
-       ("Besson", "Bruno", 'brunobesson@gmail.com', "123", "0634510976"),
+VALUES ("User", "User", 'user.noLogIn@gmail.com', "0000000", "0000000000"),
+       ("LeClement", "Alice", 'alice.leclem@gmail.com', "123", "0634510976"),
        ("Nike", "Alexandre", 'nikealex@gmail.com', "123", "0634510976"),
        ("Aquiro", "Florentin", 'aquiflor@gmail.com', "123", "0634510976"),
        ("Zire", "William", 'zirewilli@gmail.com', "123", "0634510976"),

@@ -79,7 +79,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 		}
 	} else {
 		header('location : Inscriptionf.php')
-		echo "vous n'avez pas entré de mail valide <a href='../connexion_inscription_mentions_legales_divers/Inscriptionf.php'>Recommencez</a>";
+		echo "vous n'avez pas entré de mail valide <a href='Inscriptionf.php'>Recommencez</a>";
 	}
 } else {
 

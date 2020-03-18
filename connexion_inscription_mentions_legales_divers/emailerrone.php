@@ -18,6 +18,6 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('head').append('<link rel="stylesheet" href="emailused.css">');
+        $('head').append('<link rel="stylesheet" href="pbinscription_connexion.css">');
     })
 </script>

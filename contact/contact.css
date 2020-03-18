@@ -10,7 +10,7 @@
 /*pas toucher */
 .apart_accueil {
     background: no-repeat center center #707070;
-    background-image: url('img/recherche_colocation/appart.jpg');
+    background-image: url('../img/recherche_colocation/appart.jpg');
     background-size: cover;
     height: 529px;
 
