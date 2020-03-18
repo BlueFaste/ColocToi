@@ -1,0 +1,240 @@
+
+  .rectangle{
+    width:1890px;
+    height:66vh;
+    background:rgb(219, 219, 219);
+  }
+
+.appart2{
+
+    height:66vh;
+}
+
+.questions1{
+
+   margin-top:10px; 
+   margin-left: 20px;
+}
+
+.texte{
+
+margin-left: 60px;
+}
+
+.decouvrircoloctoi{
+margin-top:10px;
+}
+
+.inscriptionidentification{
+  margin-top:10px;
+}
+
+.lesavis{
+  margin-top:10px;
+}
+
+.profil{
+
+  margin-top:10px;
+}
+
+.publications{
+
+  margin-top:10px;
+}
+
+
+.rectanglebleu{
+  background:rgb(167, 202, 223);
+ 
+}
+
+
+.questions2{
+
+margin-left:50px;
+
+
+}
+
+
+.questions3{
+
+  margin-left:50px;
+  
+  
+  }
+  
+
+  .questions4{
+
+    margin-left:50px;
+    
+    
+    }
+
+.questionsensemble2{
+ display: flex;
+  justify-content: space-around;
+}
+
+
+.texte2{
+
+  margin-left: 60px;
+  }
+  
+  .decouvrircoloctoi2{
+  margin-top:10px;
+  }
+  
+  .inscriptionidentification2{
+    margin-top:10px;
+  }
+  
+  .lesavis2{
+    margin-top:10px;
+  }
+  
+  .profil2{
+  
+    margin-top:10px;
+  }
+  
+  .publications2{
+  
+    margin-top:10px;
+  }
+
+
+  
+.texte3{
+
+  margin-left: 60px;
+  margin-top:-23px;
+
+  }
+  
+  .decouvrircoloctoi3{
+  margin-top:10px;
+  }
+  
+  .inscriptionidentification3{
+    margin-top:10px;
+  }
+  
+  .lesavis3{
+    margin-top:10px;
+  }
+  
+  .profil3{
+  
+    margin-top:10px;
+  }
+  
+  .publications3{
+  
+    margin-top:10px;
+  }
+
+  
+.texte4{
+
+  margin-left: 80px;
+  margin-top:-23px;
+  }
+  
+  .decouvrircoloctoi4{
+  margin-top:10px;
+  }
+  
+  .inscriptionidentification4{
+    margin-top:10px;
+  }
+  
+  .lesavis4{
+    margin-top:10px;
+  }
+  
+  .profil4{
+  
+    margin-top:10px;
+  }
+  
+  .publications4{
+  
+    margin-top:10px;
+  }
+
+ .menu3, .menu4, .menu2{
+  margin-bottom:4vh;
+ }
+
+
+
+   .appart3{
+    height:66vh;
+}
+
+.formulaireensemble{
+
+}
+
+.questions5{
+
+}
+
+.prenom, .nom, .email, .sujet, .message, .content-img-accueil-inp{
+ margin-left: 1vw;
+  margin-bottom:1vw;
+}
+
+.premierspas{
+  display: flex;
+}
+/*pas toucher */
+  .apart_accueil{
+    background:no-repeat center center #707070;
+    background-image: url('../img/questions/appart.jpg');
+    background-size: cover;
+    height: 529px;
+
+    text-align: center; 
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2{
+    font-family: Tahoma;
+    font-size: 60px;
+  }
+  
+  .formulaireensemble p{
+    font-family: Tahoma;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 3vw;
+  }
+
+  .slog{
+    margin-right: 25vw;
+    font-size: 1.2vw;
+  }
+
+  .content-img-accueil-text{
+    margin-right: 35vw;
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+  }
+
+  .formu{
+    display: flex;
+  }
+
+  .champ1, .champ2{
+    display: flex;
+  }
+  /*fin de pas toucher */
+
+  
