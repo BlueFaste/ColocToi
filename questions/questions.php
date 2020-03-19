@@ -1,10 +1,15 @@
 <?php $pageName = 'ColocToi - FAQ'; ?>
 <?php include('../header/header.php') ?>
 
+<script type="text/javascript">
+    // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="questions.css">');
+    })
+</script>
 
 
 <div class="apart_accueil">
-        <!--ou est ce que tu dois coder-->   
 
     <h2 class="content-img-accueil-text"> Questions - Aide </h2>
     <p class="trajan slog">Posez toutes les questions qui vous passent à l'esprit. Nous sommes là !</p>
@@ -171,13 +176,12 @@
 <?php include('../footer/footer.php') ?>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="questions.css">');
-    })
 
     <?php if (!empty($_SESSION['log'])){ ?>
-    //Permet de mettre automatique le nom prenom et mail dans les cases si l'utilisateur est connecté.
+    //Permet de mettre automatiquent les nom prenom et mail dans les cases si l'utilisateur est connecté.
     $('#name').attr('value', '<?php echo $_SESSION['log']['nom'] ?>');
     $('#firstName').attr('value', '<?php echo $_SESSION['log']['prenom'] ?>');
     $('#mail').attr('value', '<?php echo $_SESSION['log']['mail'] ?>');
     <?php  } ?>
+    })
 </script>

@@ -3,6 +3,7 @@
 <?php include('../header/header.php') ?>
 
 <script type="text/javascript">
+    // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="contact.css">');
     })
@@ -69,7 +70,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
 		<?php if (!empty($_SESSION['log'])){ ?>
-        //Permet de mettre automatique le nom prenom et mail dans les cases si l'utilisateur est connecté.
+        //Permet de mettre automatiquent les nom prenom et mail dans les cases si l'utilisateur est connecté.
         $('#name').attr('value', '<?php echo $_SESSION['log']['nom'] ?>');
         $('#firstName').attr('value', '<?php echo $_SESSION['log']['prenom'] ?>');
         $('#mail').attr('value', '<?php echo $_SESSION['log']['mail'] ?>');

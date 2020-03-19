@@ -20,17 +20,18 @@ function verifImg($imgName,$imgTmp){
   }
 
   else{
+    //On remplace les lettres accentutées par les non accentuées dans $fichier.
+    //Et on récupère le résultat dans fichier
     $imgName = strtr($imgName,
     'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
     'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
-    //On remplace les lettres accentutées par les non accentuées dans $fichier.
-    //Et on récupère le résultat dans fichier
+
 
     //En dessous, il y a l'expression régulière qui remplace tout ce qui n'est pas une lettre non accentuées ou un chiffre
     //dans $fichier par un tiret "-" et qui place le résultat dans $fichier.
     $imgName = preg_replace('/([^.a-z0-9]+)/i', '-', $imgName);
 
-    echo "<p>image :</p>".$imgName;
+//    echo "<p>image :</p>".$imgName;
 
     $chemin_img="../img/upload/appart/".$imgName;
     move_uploaded_file($imgTmp, $chemin_img);
@@ -79,11 +80,13 @@ if(isset($_POST['titre'], $_POST['ville'], $_POST['adresse'], $_POST['code_posta
     // echo $_POST['ges']."<br>";
   }
   else{
+    //on met à jour la timezone et on ajoute la date et l'heure du post
     date_default_timezone_set('Europe/Paris');
     $jour_poste=date("d/m/Y");
     $heure_poste=date("h:i:s");
     // var_dump($id_prop=$_SESSION['log']['id']);
     $id_prop=$_SESSION['log']['id'];
+    // on crèe un tableau pour pouvoir ajouter ou non les chemins des images si elles ont été ajoutés par l'utilisateur
     $array=array(
       ":id_proprietaire" =>$id_prop ,
       ":heure_de_poste" =>$heure_poste ,
@@ -143,6 +146,8 @@ if(isset($_POST['titre'], $_POST['ville'], $_POST['adresse'], $_POST['code_posta
     }
 
     ajoutBDD($connexion,$array);
+
+    echo " <a href='../accueil/accueil.php'>retour à l'accueil</a>";
 
 
   }

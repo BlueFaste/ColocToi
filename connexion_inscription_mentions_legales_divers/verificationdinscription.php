@@ -2,12 +2,6 @@
 <?php
 include('../lienversbdd.php');
 
-function console_log($data)
-{
-	echo '<script>';
-	echo 'console.log(' . json_encode($data) . ')';
-	echo '</script>';
-}
 
 if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister'])) {
 	if (isset($_SESSION['mail'])) {
@@ -30,16 +24,18 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 			//     }
 			// }
 
+			//on cherche dans la BDD si l'email existe déjà
 			$rem = $connexion->prepare('SELECT * FROM membre where mail = :mail');
 			$rem->execute(array(
 				':mail' => $_SESSION['mail']
 			));
 
 			$tableau = $rem->fetchAll();
+			//si l'email existe alors la taille du tableau est superieur à 0 donc l'utilisateur ne peut pas utiliser cette email
 			if (count($tableau) > 0) {
 				$verif = false;
 			}
-
+			// si l'eamil n'existe pas alors on peut rentrer les informations
 			if ($verif == true) {
 				$hasmdp = password_hash($_POST['mdpregister'], PASSWORD_BCRYPT);
 				$req = $connexion->prepare('INSERT INTO membre(nom,prenom,mail,mdp,tel) VALUES(:nom,:prenom,:mail,:mdp,:tel)');
@@ -50,7 +46,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 					':prenom' => $_POST['prenomregister'],
 					':mail' => $_SESSION['mail'],
 					':mdp' => $hasmdp,
-					':tel' => "0783656565",
+					':tel' => "0000000000",
 					//entrer les nouvelles colonnes de la base de donnée ici, ne pas oublier de modifier la ligne ci-dessus (avec VALUES etc...)
 
 				]);
@@ -78,7 +74,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 			}
 		}
 	} else {
-		header('location : Inscriptionf.php')
+		header('location : Inscriptionf.php');
 		echo "vous n'avez pas entré de mail valide <a href='Inscriptionf.php'>Recommencez</a>";
 	}
 } else {

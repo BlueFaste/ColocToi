@@ -2,6 +2,7 @@
 <?php include('../header/header.php') ?>
 
 <script type="text/javascript">
+    // inclusion des feuilles de styles de pages dans le header avec la ligne de code ci-dessous
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="pbinscription_connexion.css">');
     })

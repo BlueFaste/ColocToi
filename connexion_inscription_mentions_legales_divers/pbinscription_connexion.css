@@ -1,5 +1,4 @@
 
-/*pas toucher */
   .apart_accueil{
     background:no-repeat center center #707070;
     background-image: url('../img/flou/maison2.jpg');
@@ -32,7 +31,6 @@
     margin-top: 10vw;
     margin-bottom: 1vw;
   }
-  /*fin de pas toucher */
 
   .carre{
     width:500px;

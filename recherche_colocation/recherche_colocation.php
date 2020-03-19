@@ -3,6 +3,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
         $('head').append('<link rel="stylesheet" href="recherche_colocation.css">');
     })
 </script>
@@ -63,11 +64,10 @@
 
 <?php include('../footer/footer.php') ?>
 
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
 
-    $( function() { //autocomplete
+    $( function() { //autocomplete l'input avec l'id ville
         var availableTags = [
         "Paris",
         "Marseille",

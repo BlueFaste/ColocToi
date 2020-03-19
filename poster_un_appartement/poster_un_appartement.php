@@ -1,11 +1,13 @@
 <?php $pageName = 'ColocToi - Poster une colocation'; ?>
 <?php include('../header/header.php');
+// si l'utilisatuer n'est pas connecté alors on le redirige vers la page de connexion
 if (!$_SESSION['log']) {
 	header('Location: ../connexion_inscription_mentions_legales_divers/connexion.php');
 } else {
 	?>
 
     <script type="text/javascript">
+        // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
         $(document).ready(function () {
             $('head').append('<link rel="stylesheet" href="poster_un_appartement.css">');
         })

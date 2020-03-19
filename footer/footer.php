@@ -1,4 +1,5 @@
 <script type="text/javascript">
+    // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="../footer/footer.css">');
     })
@@ -9,7 +10,7 @@
             <a href=""><p>Qui sommes nous ?</p></a>
             <a href="../contact/contact.php"><p>Contact</p></a>
             <a href="../questions/questions.php"><p>Questions</p></a>
-            <a href=""><p>Informations légales</p></a>
+            <a href="../connexion_inscription_mentions_legales_divers/mentionslegales.php"><p>Informations légales</p></a>
         </div>
         <div class="">
             <a href=""><p>Presse</p></a>

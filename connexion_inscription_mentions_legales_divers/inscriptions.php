@@ -1,6 +1,7 @@
 <?php $pageName='ColocToi - inscription'; ?>
 <?php include('../header/header.php') ?>
 <script type="text/javascript">
+    // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function(){
         $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
     })
@@ -16,11 +17,11 @@
                 <div class="supp">
                     <div class="inte">
                         <label for="nomregister" class="formelement">Nom :</label>
-                        <input type="text" required name="nomregister"  value="aze"autofocus>
+                        <input type="text" required name="nomregister"  autofocus>
                     </div>
                     <div class="inte">
                         <label for="prenomregister" class="formelement" style="padding-left: 5%">Prenom :</label>
-                        <input type="text" required name="prenomregister" value="aze" class="spaceleft">
+                        <input type="text" required name="prenomregister"  class="spaceleft">
                     </div>
                 </div>
 
@@ -37,7 +38,7 @@
 
                 <div class="inte; spaceleft">
                 <div class="spaceleftandtopbis">Mot de passe :</div>
-                <div class="spaceleft"><input type="password" required name="mdpregister" value="123"></div>
+                <div class="spaceleft"><input type="password" required name="mdpregister" ></div>
                 </div>
 
 

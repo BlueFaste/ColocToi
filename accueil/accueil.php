@@ -1,7 +1,9 @@
 <?php $pageName = 'ColocToi - Accueil'; ?>
 <?php include('../header/header.php') ?>
+<!--On donne un nom à la page en donnant une valuer à la variable pageName puis on inclut le header-->
 
 <script type="text/javascript">
+    // inclusion des feuilles de styles de pages dans le header avec la ligne de code ci-dessous
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="accueil.css">');
     })
@@ -9,7 +11,7 @@
 
 <div class="apart_accueil">
     <h2 class="content-img-accueil-text"> Vous recherchez <br> un coloc ? </h2>
-    <a href=""><input type="submit" name="" value="Découvrir" class="content-img-accueil-inp trajan butt"></a>
+    <a href="../poster_un_appartement/poster_un_appartement.php"><input type="submit" name="" value="Découvrir" class="content-img-accueil-inp trajan butt"></a>
 </div>
 
 <div class="int_accueil">
@@ -50,7 +52,7 @@
             dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam es</p>
     </div>
 </section>
-<!-- voir avec les composants -->
+<!--Pas le temps mais possibilité de coder la partie ci-dessous avec un composant Vue-->
 <section class="search_coloc">
     <h3> Ils recherchent un colocataire ! </h3>
     <div class="coloc">
@@ -85,7 +87,7 @@
         </div>
     </div>
 </div>
-
+<!--on inclut le footer dans toutes les pages-->
 <?php include('../footer/footer.php') ?>
 
 
