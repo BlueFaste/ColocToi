@@ -2,6 +2,11 @@
 
 <?php include('../header/header.php') ?>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="contact.css">');
+    })
+</script>
 
 <div class="apart_accueil">
 
@@ -63,8 +68,6 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="contact.css">');
-
 		<?php if (!empty($_SESSION['log'])){ ?>
         //Permet de mettre automatique le nom prenom et mail dans les cases si l'utilisateur est connecté.
         $('#name').attr('value', '<?php echo $_SESSION['log']['nom'] ?>');

@@ -1,6 +1,12 @@
 <?php $pageName = 'ColocToi - Accueil'; ?>
 <?php include('../header/header.php') ?>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="accueil.css">');
+    })
+</script>
+
 <div class="apart_accueil">
     <h2 class="content-img-accueil-text"> Vous recherchez <br> un coloc ? </h2>
     <a href=""><input type="submit" name="" value="Découvrir" class="content-img-accueil-inp trajan butt"></a>
@@ -82,8 +88,4 @@
 
 <?php include('../footer/footer.php') ?>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="accueil.css">');
-    })
-</script>
+

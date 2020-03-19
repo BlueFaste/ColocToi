@@ -1,4 +1,11 @@
+<?php $pageName = 'ColocToi - Email déjà utilisé'; ?>
 <?php include('../header/header.php') ?>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
+    })
+</script>
 
     <div class="apart_accueil">
         <div class="carre">
@@ -16,8 +23,4 @@
 
 <?php include('../footer/footer.php')?>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('head').append('<link rel="stylesheet" href="pbinscription_connexion.css">');
-    })
-</script>
+

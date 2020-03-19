@@ -1,5 +1,12 @@
 <?php $pageName='ColocToi - Recherche une colocation'; ?>
 <?php include('../header/header.php') ?>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="recherche_colocation.css">');
+    })
+</script>
+
 <div class="apart_accueil">
   <h2 class="content-img-accueil-text"> Vous recherchez <br> une colocation ? </h2>
   <p class="trajan slog">C'est mieux d'avoir de la compagnie</p>
@@ -56,11 +63,9 @@
 
 <?php include('../footer/footer.php') ?>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    $('head').append('<link rel="stylesheet" href="recherche_colocation.css">');
 
     $( function() { //autocomplete
         var availableTags = [
@@ -83,37 +88,6 @@
         source: availableTags
         });
       });
-      // $('#bouton').on('click',function(){
-      //   var ville=$('#ville').val();
-      //   var prix=$('#prix').val();
-      //   var log=$('#log').val();
-      //   var type=$('#type').val();
-      //   var meuble=$('#meuble').val();
-      //   $.ajax({
-      //     url:'traitement_recherche_colocation.php',
-      //     type: 'POST',
-      //     data:{
-      //       ville:ville,
-      //       prix:prix,
-      //       log:log,
-      //       type:type,
-      //       meuble:meuble
-      //     },
-      //     dataType:'html',
-      //     success:function(code_html,status){
-      //       if(code_html=="no"){
-      //         alert('pb avec isset');
-      //       }
-      //       else if(code_html=="non"){
-      //         alert('pb avec empty');
-      //       }
-      //       else{
-      //         alert(code_html)
-      //         // window.location.assign(code_html);
-      //         }
-      //     }
-      //   })
-      //
-      // })
+
     })
 </script>

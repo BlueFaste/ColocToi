@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>un titre</title>
+<?php $pageName = 'ColocToi - Divers'; ?>
+<?php include('../header/header.php') ?>
 
-    <link rel="stylesheet" type="text/css" href="stylecreationf.css">
-</head>
-<body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
+    })
+</script>
 
 
     <div class="fond">
@@ -47,32 +46,3 @@
         </div>
     </div>
 
-
-
-
-
-<?php
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-
-
-</body>
-</html>

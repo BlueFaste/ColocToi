@@ -1,3 +1,8 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="../footer/footer.css">');
+    })
+</script>
 <footer>
     <div class="footer_up">
         <div class="">
@@ -35,9 +40,5 @@
 
 </body>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="../footer/footer.css">');
-    })
-</script>
+
 </html>

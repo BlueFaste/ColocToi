@@ -1,6 +1,10 @@
 <?php $pageName='ColocToi - inscription'; ?>
 <?php include('../header/header.php') ?>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
+    })
+</script>
     <div class="fond">
 
 
@@ -71,9 +75,3 @@
 
 <?php include('../footer/footer.php') ?>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
-    })
-  </script>

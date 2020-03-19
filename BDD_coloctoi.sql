@@ -85,5 +85,5 @@ VALUES ("User", "User", 'user.noLogIn@gmail.com', "0000000", "0000000000"),
 INSERT INTO `appartement` (`id_proprietaire`, `heure_de_poste`, `jour_de_post`, `titre`, `ville`, `adresse`,
                            `code_postal`, `type_logement`, `superficie`, `nb_piece`, `nb_coloc_max`, `nb_coloc_rech`,
                            `meuble`, `loyer`, `charges`, `descritpion`, `classe_energetique`, `ges`)
-VALUES ('1', '13:10:10', '2020-03-10', 'appartement neuf', 'Angers', '21 rue du cooo', '37420', 'appartement', '21',
+VALUES ('1', '13:10', '2020-03-10', 'appartement neuf', 'Angers', '21 rue du cooo', '37420', 'appartement', '21',
         '2', '4', '1', 'true', '100', '10', 'azertyu', "a", "a");
