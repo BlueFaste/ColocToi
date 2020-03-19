@@ -1,8 +1,9 @@
+<!--Caroline Fassot-->
 <?php $pageName = 'ColocToi - Poster une colocation'; ?>
 <?php include('../header/header.php');
 // si l'utilisatuer n'est pas connecté alors on le redirige vers la page de connexion
 if (!$_SESSION['log']) {
-	header('Location: ../connexion_inscription_mentions_legales_divers/connexion.php');
+	header('Location: ../connexion/connexion.php');
 } else {
 	?>
 
@@ -58,7 +59,7 @@ if (!$_SESSION['log']) {
                        placeholder="Nombre de pièce de votre logement" value="" required>
             </div>
             <div>
-                <label for="nb_coloc_poss">Nombre de colocataires maximal : </label>
+                <label for="nb_coloc_max">Nombre de colocataires maximal : </label>
                 <input type="number" min="2" name="nb_coloc_max" id="nb_coloc_max"
                        placeholder="Nombre de colocataires maximal de votre logement" value="" required>
             </div>
@@ -148,9 +149,8 @@ if (!$_SESSION['log']) {
         </div>
     </form>
 
-	<?php include('../footer/footer.php') ?>
+	<?php require_once('../footer/footer.php') ?>
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript">
         $(function () { //autocomplete
             var availableTags = [

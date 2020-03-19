@@ -1,7 +1,10 @@
+<!--Caroline Fassot-->
+
 <?php session_start();
 include('../lienversbdd.php');
-function ajoutBDD($connexion,$array){
-  $req=$connexion-> prepare('INSERT INTO question(`id_utilisateur`, `nom`, `prenom`,`mail`,`sujet`,`message`)  VALUES (:id_utilisateur, :nom, :prenom, :mail, :sujet, :message )');
+function ajoutBDD(PDO $connexion,$array){
+    var_dump($_SESSION['log']);
+  $req = $connexion->prepare('INSERT INTO question(`id_utilisateur`, `nom`, `prenom`,`mail`,`sujet`,`message`)  VALUES (:id_utilisateur, :nom, :prenom, :mail, :sujet, :message )');
 
   var_dump($array);
   var_dump($req->execute($array));

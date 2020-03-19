@@ -1,6 +1,6 @@
+<!--Camille Varloud-->
 <?php $pageName = 'ColocToi - Contact'; ?>
-
-<?php include('../header/header.php') ?>
+<?php require_once('../header/header.php') ?>
 
 <script type="text/javascript">
     // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
@@ -23,7 +23,7 @@
         <form class="formulaire" method="post" action="traitement_contact.php">
             <div class="champ1">
                 <div class="nom">
-                    <label>Nom:</label><br>
+                    <label for="name">Nom:</label><br>
                     <input type="text" name="nom" placeholder="Votre nom" id="name" required autofocus>
                     <!-- <input type="text" name="nom" placeholder="Votre nom" id="name" value=" -->
 					<?php //echo $_SESSION['log'] ? $_SESSION['log']['nom'] : "" ?>
@@ -31,23 +31,23 @@
                     <!-- " required autofocus> -->
                 </div>
                 <div class="prenom">
-                    <label>Prenom:</label><br>
+                    <label for="firstName">Prenom:</label><br>
                     <input type="text" name="prenom" placeholder="Votre prenom" id="firstName" required>
                 </div>
             </div>
             <div class="champ2">
                 <div class="email">
-                    <label>Email:</label><br>
+                    <label for="mail">Email:</label><br>
                     <input type="email" name="email" placeholder="Votre email" id="mail" required>
                 </div>
                 <div class="sujet">
-                    <label>Sujet:</label><br>
-                    <input type="text" name="sujet" placeholder="Votre sujet" required>
+                    <label for="sujet">Sujet:</label><br>
+                    <input type="text" name="sujet" placeholder="Votre sujet" id="sujet" required>
                 </div>
             </div>
             <div class="message">
-                <label>Message:</label><br>
-                <textarea name="message" rows="5" cols="70" required></textarea>
+                <label for="message">Message:</label><br>
+                <textarea name="message" rows="5" cols="70" id="message" required></textarea>
             </div>
 
             <input type="submit" name="" value="Valider" class="content-img-accueil-inp trajan butt">
@@ -64,7 +64,7 @@
 
 </div>
 
-<?php include('../footer/footer.php') ?>
+<?php require_once('../footer/footer.php') ?>
 
 
 <script type="text/javascript">

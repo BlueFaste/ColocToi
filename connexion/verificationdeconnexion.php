@@ -1,3 +1,4 @@
+<!--Noé Leroi-->
 <?php session_start();?>
 <?php
 
@@ -24,6 +25,7 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
 
             if( ($_POST['verifmail'] == $mail) && (password_verify($_POST['verifmdp'],$mdp)) )
             {
+                var_dump($ligne);
               $_SESSION['log']=[
                 'id'=>$ligne->id,
                 'nom'=>$ligne->nom,
@@ -49,10 +51,10 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
     elseif($verif=="mailfalse")
     {
         echo "votre adresse mail et votre mot de passe ne correspondent pas<br><a href='connexion.php'>Cliquez ici pour revenir à la page de connexion </a>";
-        header('location: emailfalse.php');
+        header('location: ../pbemail/emailfalse.php');
     }
     else{
-        header ('location: motdepassefalse.php');
+        header ('location: ../pbmdp/motdepassefalse.php');
     }
 
 
@@ -65,7 +67,7 @@ if(isset($_POST['verifmail'],$_POST['verifmdp']))
 else
 {
 echo "Hey ! Vous n'êtes pas sencés être ici !";
-echo "<br><a href='accueil.php'>Hop hop cliquez ici pour repartir</a>";
+echo "<br><a href='../accueil/accueil.php'>Hop hop cliquez ici pour repartir</a>";
 header('location: Inscriptionf.php');
 }
 

@@ -1,9 +1,10 @@
+<!--Noé Leroi-->
 <?php $pageName='ColocToi - inscription'; ?>
-<?php include('../header/header.php') ?>
+<?php require_once('../header/header.php') ?>
 <script type="text/javascript">
     // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function(){
-        $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
+        $('head').append('<link rel="stylesheet" href="../stylecreationf.css">');
     })
 </script>
     <div class="fond">
@@ -45,7 +46,7 @@
                 <div class="centrezmoica"><input type="submit" value="Suivant" class="boutoninscript ; formelement"></div>
 
              </form>
-            <p class="paradefin">Déjà membre ? <a href="Connexion.php"><u>Connectez-vous</u></a></p>
+            <p class="paradefin">Déjà membre ? <a href="../connexion/connexion.php"><u>Connectez-vous</u></a></p>
             <p class="paradefinbis"> En continuant, vous acceptez les conditions générales et notre Politiques de confidentialité. </p>
 
 
@@ -74,5 +75,5 @@
 
 
 
-<?php include('../footer/footer.php') ?>
+<?php require_once('../footer/footer.php') ?>
 

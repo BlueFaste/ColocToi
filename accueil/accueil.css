@@ -1,3 +1,5 @@
+/*Caroline Fassot*/
+
 /*Pour du texte responsive utilisé vw comme unité*/
 
 
@@ -26,7 +28,7 @@
 }
 
 .int_accueil h2 {
-    margin-bottom: 0vw;
+    margin-bottom: 0;
     padding-top: 12vw;
     font-size: 3vw;
 }
@@ -37,7 +39,7 @@
 }
 
 h2 {
-    font-family: Tahoma;
+    font-family: Tahoma, serif;
     font-size: 60px;
 }
 
@@ -100,7 +102,7 @@ h2 {
 h3 {
     margin-top: 0;
     font-size: 30px;
-    font-family: Tahoma;
+    font-family: Tahoma, serif;
 }
 
 .why_coloc p {
@@ -132,7 +134,7 @@ h3 {
     width: 3px;
     height: 32vw;
     background-color: #D4D4D4;
-    margin: 0vw 2vw;
+    margin: 0 2vw;
 
 }
 

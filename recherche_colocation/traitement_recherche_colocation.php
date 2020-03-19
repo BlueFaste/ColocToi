@@ -1,3 +1,4 @@
+<!--Caroline Fassot-->
 <?php
 include('../lienversbdd.php');
 
@@ -12,31 +13,23 @@ if (isset($_POST['ville'], $_POST['prix'], $_POST['log'], $_POST['type'], $_POST
 		$enter = "ville=:ville";
 		$array[":ville"] = $_POST['ville'];
 
-		if (empty($_POST['prix'])) {
-			//si le prix est vide alors on n'ajoute rien dans enter et dans le tableau
-		} else {
-			//a contrario si empty n'est pas vide, on complete enter et le tableau
+		if (!empty($_POST['prix'])) {
+			//si empty n'est pas vide, on complete enter et le tableau sinon on ne fait rien
 			$enter .= " AND prix=:prix";
 			$array[":prix"] = $_POST['prix'];
 		}
 
-		if ($_POST['log'] == "no") {
-
-		} else {
+		if ($_POST['log'] != "no") {
 			$enter .= " AND loge=:loge";
 			$array[":loge"] = $_POST['log'];
 		}
 
-		if ($_POST['type'] == "no") {
-
-		} else {
+		if ($_POST['type'] != "no") {
 			$enter .= " AND type=:type";
 			$array[":type"] = $_POST['type'];
 		}
 
-		if ($_POST['meuble'] == "no") {
-
-		} else {
+		if ($_POST['meuble'] != "no") {
 			$enter .= " AND meuble=:meuble";
 			$array[":meuble"] = $_POST['meuble'];
 		}
@@ -49,6 +42,8 @@ if (isset($_POST['ville'], $_POST['prix'], $_POST['log'], $_POST['type'], $_POST
 
 		$recherche = $req->fetchAll();
 		var_dump($recherche);
+
+		echo "<a href='../accueil/accueil.php'>retour à l'accueil</a>";
 
 	}
 } else {

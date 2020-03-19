@@ -1,3 +1,4 @@
+/*Caroline Fassot*/
 .apart_accueil{
   background:no-repeat center center #707070;
   background-size: cover;
@@ -20,7 +21,7 @@
 }
 
 h2{
-  font-family: Tahoma;
+  font-family: Tahoma, serif;
   font-size: 60px;
 }
 
@@ -37,7 +38,7 @@ h2{
 }
 
 .formulaire_colocation p{
-  font-family: Tahoma;
+  font-family: Tahoma, serif;
   font-size: 3vw;
   font-weight: bold;
   margin-top: 0;

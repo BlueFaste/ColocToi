@@ -1,3 +1,4 @@
+# Caroline Fassot
 # Pour créer la base de donnée, on drop celle existante et on la recréer
 DROP DATABASE IF EXISTS `coloctoi`;
 CREATE DATABASE `coloctoi` CHARACTER SET utf8 COLLATE utf8_unicode_ci;
@@ -75,16 +76,16 @@ ALTER TABLE `question`
 
 # On insert des valeurs par défaut pour avoir une BDD un peu remplite pour des tests
 INSERT INTO `membre` (`nom`, `prenom`, `mail`, `mdp`, `tel`)
-VALUES ("User", "User", 'user.noLogIn@gmail.com', "0000000", "0000000000"),
-       ("LeClement", "Alice", 'alice.leclem@gmail.com', "123", "0634510976"),
-       ("Nike", "Alexandre", 'nikealex@gmail.com', "123", "0634510976"),
-       ("Aquiro", "Florentin", 'aquiflor@gmail.com', "123", "0634510976"),
-       ("Zire", "William", 'zirewilli@gmail.com', "123", "0634510976"),
-       ("Niddy", "Joséphine", 'niddyjosé@gmail.com', "123", "0634510976"),
-       ("Nakiu", "Muriel", 'nakiumumu@gmail.com', "123", "0634510976"),
-       ("Loane", "Maude", 'loanemaude@gmail.com', "123", "0634510976"),
-       ("Madri", "Chiara", 'madrichiara@gmail.com', "123", "0634510976"),
-       ("Buitl", "Louise", 'buitllouise@gmail.com', "123", "0634510976");
+VALUES ('User', 'User', 'user.noLogIn@gmail.com', '0000000', '0000000000'),
+       ('LeClement', 'Alice', 'alice.leclem@gmail.com', '123', '0634510976'),
+       ('Nike', 'Alexandre', 'nikealex@gmail.com', '123', '0634510976'),
+       ('Aquiro', 'Florentin', 'aquiflor@gmail.com', '123', '0634510976'),
+       ('Zire', 'William', 'zirewilli@gmail.com', '123', '0634510976'),
+       ('Niddy', 'Joséphine', 'niddyjosé@gmail.com', '123', '0634510976'),
+       ('Nakiu', 'Muriel', 'nakiumumu@gmail.com', '123', '0634510976'),
+       ('Loane', 'Maude', 'loanemaude@gmail.com', '123', '0634510976'),
+       ('Madri', 'Chiara', 'madrichiara@gmail.com', '123', '0634510976'),
+       ('Buitl', 'Louise', 'buitllouise@gmail.com', '123', '0634510976');
 
 # On n'ajout pas d'image c'est volontaire, appartement fictif
 INSERT INTO `appartement` (`id_proprietaire`, `heure_de_poste`, `jour_de_post`, `titre`, `ville`, `adresse`,

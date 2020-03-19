@@ -1,5 +1,6 @@
+<!--Caroline Fassot-->
 <?php $pageName='ColocToi - Recherche une colocation'; ?>
-<?php include('../header/header.php') ?>
+<?php require_once('../header/header.php') ?>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -62,7 +63,7 @@
   </form>
 </div>
 
-<?php include('../footer/footer.php') ?>
+<?php require_once('../footer/footer.php') ?>
 
 <script type="text/javascript">
   $(document).ready(function(){

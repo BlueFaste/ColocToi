@@ -1,9 +1,10 @@
-<?php $pageName = 'ColocToi - connexion'; ?>
-<?php include('../header/header.php') ?>
+<!--Noé Leroi-->
+<?php $pageName = 'ColocToi - Connexion'; ?>
+<?php require_once('../header/header.php') ?>
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('head').append('<link rel="stylesheet" href="stylecreationf.css">');
+        $('head').append('<link rel="stylesheet" href="../stylecreationf.css">');
     })
 </script>
 
@@ -27,11 +28,11 @@
             <p>ou</p>
 
             <label for="verifmail" class="formelement">Entrez votre adresse E-mail</label>
-            <input type="email" name="verifmail" class="formuinscri" required>
+            <input type="email" id="verifmail" name="verifmail" class="formuinscri" required>
 
             <label for="verifmdp" class="formelement">Mot de passe</label>
-            <input type="password" name="verifmdp" class="formuinscri" required>
-            <a href="motdepasseoublie.php"><u>Mot de passe oublié ?</u></a>
+            <input type="password" id="verifmdp" name="verifmdp" class="formuinscri" required>
+            <a href="../pbmdp/motdepasseoublie.php"><u>Mot de passe oublié ?</u></a>
 
 
             <div class="centrezmoica">
@@ -39,7 +40,7 @@
             </div>
 
         </form>
-        <p class="paradefin">Pas encore membre ? <a href="Inscriptionf.php"><u>inscrivez-vous</u></a></p>
+        <p class="paradefin">Pas encore membre ? <a href="../inscription/Inscriptionf.php"><u>inscrivez-vous</u></a></p>
         <p class="paradefinbis"> En continuant, vous acceptez les conditions générales et notre Politiques de
             confidentialité. </p>
 

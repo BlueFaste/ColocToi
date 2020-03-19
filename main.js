@@ -1,3 +1,4 @@
+// Caroline Fassot
 // Début de composant mais pas eu le temps de le coder
 Vue.component('img-up',{
   props:['unevaribale'],

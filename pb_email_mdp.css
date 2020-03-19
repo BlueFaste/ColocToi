@@ -1,9 +1,10 @@
+/*Camille Varloud*/
 /*===========================================================================================*\
 #    CSS COMMUN AUX PAGES EMAILFALSE EMAILUSED EMAILERRONE MOTDEPASSEFALSE MOTDEPASSEOUBLIE    #======================================================================
 \*===========================================================================================*/
   .apart_accueil{
     background:no-repeat center center #707070;
-    background-image: url('../img/flou/maison2.jpg');
+    background-image: url('img/flou/maison2.jpg');
     background-size: cover;
 
     text-align: center; 
@@ -12,12 +13,12 @@
   }
 
   h2{
-    font-family: Tahoma;
+    font-family: Tahoma, Arial, serif;
     font-size: 60px;
   }
   
   .formulaireensemble p{
-    font-family: Tahoma;
+    font-family: Tahoma, serif;
     font-size: 2vw;
     font-weight: bold;
     margin-top: 3vw;

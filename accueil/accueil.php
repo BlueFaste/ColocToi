@@ -1,5 +1,7 @@
+<!--Caroline Fassot -->
+
 <?php $pageName = 'ColocToi - Accueil'; ?>
-<?php include('../header/header.php') ?>
+<?php require_once('../header/header.php') ?>
 <!--On donne un nom à la page en donnant une valuer à la variable pageName puis on inclut le header-->
 
 <script type="text/javascript">
@@ -57,10 +59,12 @@
     <h3> Ils recherchent un colocataire ! </h3>
     <div class="coloc">
         <div class="">
-            <img src="../img/accueil/fille.jpg" alt="">
-            <p>Prénom nom</p>
-            <p>Ville</p>
-            <input type="submit" name="" value="Voir" class="trajan ">
+            <img src="../img/accueil/fille2.jpg" alt="">
+            <p>
+                Alysson Down
+            </p>
+            <p>Angers</p>
+            <a href="../recherchecolocataire/recherchecolocataire.php"><input type="submit" name="" value="Voir" class="trajan "></a>
         </div>
         <div class="trait"></div>
         <div class="">
@@ -88,6 +92,6 @@
     </div>
 </div>
 <!--on inclut le footer dans toutes les pages-->
-<?php include('../footer/footer.php') ?>
+<?php require_once('../footer/footer.php') ?>
 
 

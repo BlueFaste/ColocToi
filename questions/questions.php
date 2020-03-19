@@ -1,5 +1,6 @@
+<!--Camille Varloud-->
 <?php $pageName = 'ColocToi - FAQ'; ?>
-<?php include('../header/header.php') ?>
+<?php require_once('../header/header.php') ?>
 
 <script type="text/javascript">
     // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
@@ -19,7 +20,7 @@
 
 
     <div class="rectangle">
-        <img src="../img/questions/questions1.png" class="questions1"/>
+        <img src="../img/questions/questions1.png" class="questions1" alt="Premiers pas sur ColocToi"/>
 
         <div class="texte">
 
@@ -41,7 +42,7 @@
         </div>
     </div>
 
-    <img src="../img/questions/appart2.jpg" class="appart2"/>
+    <img src="../img/questions/appart2.jpg" class="appart2" alt="Extérieur d'un immeuble"/>
 
 </div>
 
@@ -51,7 +52,7 @@
 
     <div class="questionsensemble2">
         <div class="menu2">
-            <img src="../img/questions/questions4.png" class="questions2"/>
+            <img src="../img/questions/questions4.png" class="questions2" alt="Sur mobile"/>
             <div class="texte2">
 
                 <div class="decouvrircoloctoi2">
@@ -75,7 +76,7 @@
 
         <div class="menu3">
 
-            <img src="../img/questions/questions2.png" class="questions3"/>
+            <img src="../img/questions/questions2.png" class="questions3" alt="Autres questions"/>
 
             <div class="texte3">
 
@@ -99,7 +100,7 @@
 
 
         <div class="menu4">
-            <img src="../img/questions/questions2.png" class="questions4"/>
+            <img src="../img/questions/questions2.png" class="questions4" alt="Autres questions"/>
 
 
             <div class="texte4">
@@ -130,38 +131,38 @@
 
 <div class="formu">
 
-    <img src="../img/questions/appart3.jpg" class="appart3"/>
+    <img src="../img/questions/appart3.jpg" class="appart3" alt="Intérieur d'un appartement"/>
 
 
     <div class="formulaireensemble">
-        <img src="../img/questions/questions4.png" class="questions5"/>
+        <img src="../img/questions/questions4.png" class="questions5" alt="Sur mobile"/>
         <form class="formulaire" method="post" action="../contact/traitement_contact.php">
             <div class="champ1">
                 <div class="nom">
-                    <label>Nom:</label><br>
+                    <label for="name">Nom:</label><br>
                     <input type="text" name="nom" placeholder="Votre nom" id="name" required >
                 </div>
                 <div class="prenom">
-                    <label>Prenom:</label><br>
+                    <label for="firstName">Prenom:</label><br>
                     <input type="text" name="prenom" placeholder="Votre prenom" id="firstName" required>
                 </div>
             </div>
             <div class="champ2">
 
                 <div class="email">
-                    <label>Email:</label><br>
+                    <label for="mail">Email:</label><br>
                     <input type="email" name="email" placeholder="Votre email" id="mail" required>
                 </div>
 
                 <div class="sujet">
-                    <label>Sujet:</label><br>
-                    <input type="text" name="sujet" placeholder="Votre sujet" required>
+                    <label for="sujet">Sujet:</label><br>
+                    <input type="text" name="sujet" placeholder="Votre sujet" id="sujet" required>
                 </div>
 
             </div>
             <div class="message">
-                <label>Message:</label><br>
-                <textarea name="message" rows="5" cols="80" required></textarea>
+                <label for="message">Message:</label><br>
+                <textarea name="message" rows="5" cols="80" id="message" required></textarea>
             </div>
 
             <input type="submit" name="" value="Valider" class="content-img-accueil-inp trajan butt">
@@ -173,7 +174,8 @@
 </div>
 
 
-<?php include('../footer/footer.php') ?>
+<?php require_once('../footer/footer.php') ?>
+
 <script type="text/javascript">
     $(document).ready(function () {
 

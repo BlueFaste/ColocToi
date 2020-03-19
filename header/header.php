@@ -20,7 +20,7 @@
                                               id="logo"/></a>
     </h1>
     <nav class="">
-        <p><a href="../recherche_colocation/recherche_colocation.php"><img src="../img/header/loupe_recherche.png"/></a><a
+        <p><a href="../recherche_colocation/recherche_colocation.php"><img src="../img/header/loupe_recherche.png" alt="Recherche"/></a><a
                     href="../recherche_colocation/recherche_colocation.php"> Recherche </a></p>
         <p><a href=""> Faites-nous confiance </a></p>
         <p><a href="../poster_un_appartement/poster_un_appartement.php"> Poster </a></p>
@@ -30,8 +30,8 @@
             <p><a href=""> Mon compte </a></p>
             <p id="logOut"><a href="../logOut.php"> Déconnexion </a></p>
 		<?php } else { ?>
-            <p><a href="../connexion_inscription_mentions_legales_divers/connexion.php"> Connexion </a></p>
-            <p><a href="../connexion_inscription_mentions_legales_divers/Inscriptionf.php"> Inscription </a></p>
+            <p><a href="../connexion/connexion.php"> Connexion </a></p>
+            <p><a href="../inscription/Inscriptionf.php"> Inscription </a></p>
 		<?php } ?>
     </nav>
 

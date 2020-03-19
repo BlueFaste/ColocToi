@@ -1,3 +1,4 @@
+/*Camille Varloud*/
 .carre {
     width: 800px;
     /* height:400px; */
@@ -78,12 +79,12 @@ input {
 }
 
 h2 {
-    font-family: Tahoma;
+    font-family: Tahoma, serif;
     font-size: 60px;
 }
 
 .formulaireensemble p {
-    font-family: Tahoma;
+    font-family: Tahoma, serif;
     font-size: 2vw;
     font-weight: bold;
     margin-top: 3vw;
