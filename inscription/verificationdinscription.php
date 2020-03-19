@@ -27,7 +27,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 
 //			Début Caroline fassot
 			//on cherche dans la BDD si l'email existe déjà
-			$rem = $connexion->prepare('SELECT * FROM membre where mail = :mail');
+			$rem = $connexion->prepare('SELECT mail FROM membre where mail = :mail');
 			$rem->execute(array(
 				':mail' => $_SESSION['mail']
 			));

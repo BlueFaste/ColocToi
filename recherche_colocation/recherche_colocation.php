@@ -22,27 +22,24 @@
       <input type="text" name="ville" value="" id="ville" placeholder="Paris, Lyon, Marseille, Lille, Toulouse, Nantes, Nice..." required autofocus>
     </div>
     <div>
-      <label for="prix">Prix : </label>
+      <label for="loyer">Loyer : </label>
       <span>
-      <input type="range" name="prix" min="0" max="1500" step="50" value="0" oninput="result4.value=parseInt(prix.value)" id="prix"/>
+      <input type="range" name="loyer" min="0" max="1500" step="50" value="0" oninput="result4.value=parseInt(loyer.value)" id="loyer"/>
         <output name="result4">--</output>€ <!-- permet de faire une sorte de compteur qui correspond à la position du curseur sur la barre-->
       </span>
     </div>
     <div>
-      <label for="log">Logement</label>
-      <select class="" name="log" id="log">
+      <label for="type_logement">Logement</label>
+      <select class="" name="type_logement" id="type_logement">
         <option value="no">--Sans importance--</option>
-        <option value="appart">Appartement</option>
+        <option value="appartement">Appartement</option>
         <option value="maison">Maison</option>
       </select>
     </div>
     <div>
-      <label for="type">Type</label>
-      <select class="" name="type" id="type">
+      <label for=nb_piece>Nombre de pièce</label>
+      <select class="" name=nb_piece id=nb_piece>
         <option value="no">--Sans importance--</option>
-        <option value="1">T1</option>
-        <option value="1-2">T1n2</option>
-        <option value="2">T2</option>
         <option value="3">T3</option>
         <option value="4">T4</option>
         <option value="5">T5</option>
@@ -54,7 +51,7 @@
       <label for="meuble">Meublé</label>
       <select class="" name="meuble" id="meuble">
         <option value="no">--Sans importance--</option>
-        <option value="oui">Meublé</option>
+        <option value="true">Meublé</option>
         <option value="false">Non meublé</option>
       </select>
     </div>

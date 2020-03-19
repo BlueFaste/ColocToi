@@ -50,7 +50,7 @@ h2{
   /* margin: 0 35vw; */
 }
 
-.formulaire_colocation input:not(#prix), .formulaire_colocation select{
+.formulaire_colocation input:not(#loyer), .formulaire_colocation select{
   height: 2vw;
   margin: 1vw;
 }

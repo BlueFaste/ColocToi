@@ -49,7 +49,7 @@ if (!$_SESSION['log']) {
                 </select>
             </div>
             <div>
-                <label for="superficie">Superficie : </label>
+                <label for="superficie">Superficie (en m2): </label>
                 <input type="number" min="1" name="superficie" id="superficie"
                        placeholder="Superficie de votre logement" value="" required>
             </div>
@@ -78,13 +78,13 @@ if (!$_SESSION['log']) {
             </div>
             <div>
                 <label for="loyer">Loyer (sans charges) : </label>
-                <input type="number" min="0" name="loyer" id="loyer" placeholder="Loyer de votre logement" value="23"
+                <input type="number" min="0" name="loyer" id="loyer" placeholder="Loyer de votre logement" value=""
                        required>
             </div>
             <div>
                 <label for="charges">Charges : </label>
                 <input type="number" min="0" name="charges" id="charges" placeholder="Charges de votre logement"
-                       value="23" required>
+                       value="" required>
             </div>
             <div>
                 <label for="classe_ener">Classe énergetique : </label>
@@ -123,23 +123,37 @@ if (!$_SESSION['log']) {
             <p>Ajouter des photos</p>
             <input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
             <!-- empêche l'ajout d'image dont le poids est supérieur à 1 000 000 octets à mettre pour que le $_FILES['img]['name'] marche']-->
-
-            <input type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="test"/>
-            <input type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>
-            <input type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>
-            <input type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>
+            <!--            Provisoir, on est sensé cliquer sur l'image de l'appareil photo pour ajouter une photo-->
+            <!--            <input type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="test" required/>-->
+            <!--            <input type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>-->
+            <!--            <input type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>-->
+            <!--            <input type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>-->
             <div class="div_ajout_img">
-                <div class="ajout_self">
-                    <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                <div class="image-upload">
+                    <label for="file-input1">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" id="img1" class="icone">
+                    </label>
+                    <input id="file-input1" type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="test"
+                           required/>
                 </div>
-                <div class="ajout_self">
-                    <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+
+                <div class="image-upload">
+                    <label for="file-input2">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" id="" class="icone">
+                    </label>
+                    <input id="file-input2" type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>
                 </div>
-                <div class="ajout_self">
-                    <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                <div class="image-upload">
+                    <label for="file-input3">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                    </label>
+                    <input id="file-input3" type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>
                 </div>
-                <div class="ajout_self">
-                    <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                <div class="image-upload">
+                    <label for="file-input4">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                    </label>
+                    <input id="file-input4" type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>
                 </div>
             </div>
         </div>
@@ -152,25 +166,33 @@ if (!$_SESSION['log']) {
 	<?php require_once('../footer/footer.php') ?>
 
     <script type="text/javascript">
-        $(function () { //autocomplete
-            var availableTags = [
-                "Paris",
-                "Marseille",
-                "Toulouse",
-                "Lyon",
-                "Lille",
-                "Nice",
-                "Nantes",
-                "Strabourg",
-                "Toulon",
-                "Angers",
-                "Saumur",
-                "Tours",
-                "Montpellier",
-                "Orléans"
-            ];
-            $("#ville").autocomplete({
-                source: availableTags
+        $(document).ready(function () {
+            $(function () { //autocomplete
+                var availableTags = [
+                    "Paris",
+                    "Marseille",
+                    "Toulouse",
+                    "Lyon",
+                    "Lille",
+                    "Nice",
+                    "Nantes",
+                    "Strabourg",
+                    "Toulon",
+                    "Angers",
+                    "Saumur",
+                    "Tours",
+                    "Montpellier",
+                    "Orléans"
+                ];
+                $("#ville").autocomplete({
+                    source: availableTags
+                });
+            });
+
+
+            $("#file-input1").change(function () {
+                // Action s'exécutant des qu'une valeur de tes inputs est changées
+              $("#img1").attr('src','../img/icones/appreil2.png')
             });
         });
     </script>

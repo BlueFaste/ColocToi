@@ -76,6 +76,6 @@
 
 
 <?php
-include('footer.php')
+require_once('../footer/footer.php');
 ?>
 

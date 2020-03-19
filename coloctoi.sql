@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `appartement` (
   `adresse` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `typedebien` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `prix` int(11) NOT NULL,
+  `loyer` int(11) NOT NULL,
   `surface` int(11) NOT NULL,
   `meuble` tinyint(1) NOT NULL,
   `classeenergie` varchar(255) COLLATE utf8_unicode_ci NOT NULL,

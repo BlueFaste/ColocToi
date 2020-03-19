@@ -27,9 +27,9 @@
                         <option value="Appart" >Appartement</option>
                         <option value="Maison" >Maison</option>
                     </select>
-                    <label for="prix">Prix : </label>
+                    <label for="loyer">Loyer : </label>
                     <span>
-                    <input type="range" name="prix" min="0" max="1500" step="50" value="0" oninput="result4.value=parseInt(prix.value)" id="prix"/>
+                    <input type="range" name="loyer" min="0" max="1500" step="50" value="0" oninput="result4.value=parseInt(loyer.value)" id="loyer"/>
                         <output name="result4">--</output>€ <!-- permet de faire une sorte de compteur qui correspond à la position du curseur sur la barre-->
                     </span>
                     <label for="superficie">Superficie : </label>

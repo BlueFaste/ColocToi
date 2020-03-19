@@ -2,31 +2,33 @@
 <?php
 include('../lienversbdd.php');
 
-if (isset($_POST['ville'], $_POST['prix'], $_POST['log'], $_POST['type'], $_POST['meuble'])) {
-	if (empty($_POST['ville']) || empty($_POST['log']) || empty($_POST['type']) || empty($_POST['meuble'])) {
+if (isset($_POST['ville'], $_POST['loyer'], $_POST['type_logement'], $_POST['nb_piece'], $_POST['meuble'])) {
+	if (empty($_POST['ville']) || empty($_POST['type_logement']) || empty($_POST['nb_piece']) || empty($_POST['meuble'])) {
 		echo "un champs est vide, <a href='recherche_colocation.php'>veuillez reremplir le formulaire.</a>";
 
 	} else {
 		//La ville est obligatoirement remplite sinon le formulaire ne s'envoit pas (sauf si un petit malin modifie le code )
 		//on créer la variable enter qui va contenir le la partie VALUE de la requète MySQL
 		// on créer un tableau qui lui sera utilisé lors de l'execution de la requète
-		$enter = "ville=:ville";
+		//UPPER permet de tout de mettre en majuscule lors de la recherche sql, ignore la case
+		// (en bref il peut écrire la ville avec des majuscule n'importe où)
+		$enter = " UPPER(ville) = UPPER(:ville)";
 		$array[":ville"] = $_POST['ville'];
 
-		if (!empty($_POST['prix'])) {
+		if (!empty($_POST['loyer'])) {
 			//si empty n'est pas vide, on complete enter et le tableau sinon on ne fait rien
-			$enter .= " AND prix=:prix";
-			$array[":prix"] = $_POST['prix'];
+			$enter .= " AND loyer=:loyer";
+			$array[":loyer"] = $_POST['loyer'];
 		}
 
-		if ($_POST['log'] != "no") {
-			$enter .= " AND loge=:loge";
-			$array[":loge"] = $_POST['log'];
+		if ($_POST['type_logement'] != "no") {
+			$enter .= " AND type_logement=:type_logement";
+			$array[":type_logement"] = $_POST['type_logement'];
 		}
 
-		if ($_POST['type'] != "no") {
-			$enter .= " AND type=:type";
-			$array[":type"] = $_POST['type'];
+		if ($_POST["nb_piece"] != "no") {
+			$enter .= " AND nb_piece=:nb_piece";
+			$array[":nb_piece"] = $_POST["nb_piece"];
 		}
 
 		if ($_POST['meuble'] != "no") {
@@ -34,8 +36,8 @@ if (isset($_POST['ville'], $_POST['prix'], $_POST['log'], $_POST['type'], $_POST
 			$array[":meuble"] = $_POST['meuble'];
 		}
 
-		// var_dump($enter);
-		// var_dump($array);
+//		var_dump($enter);
+//		var_dump($array);
 		$req = $connexion->prepare("SELECT * FROM appartement WHERE $enter");
 
 		$req->execute($array);
@@ -43,11 +45,11 @@ if (isset($_POST['ville'], $_POST['prix'], $_POST['log'], $_POST['type'], $_POST
 		$recherche = $req->fetchAll();
 		var_dump($recherche);
 
-		echo "<a href='../accueil/accueil.php'>retour à l'accueil</a>";
+		echo "<a href='resultatrecherchecolocation.php'>Aller à la page statique des résultats</a>";
 
 	}
 } else {
-	echo "Erreur normalement inmpossible, sauf si vous avez modifié le formulaire. <a href='recherche_colocation.php'>Veuillez le reremplir SANS LE MODIFIER</a> ";
+	echo "Erreur normalement impossible, sauf si vous avez modifié le formulaire. <a href='recherche_colocation.php'>Veuillez le reremplir SANS LE MODIFIER</a> ";
 }
 
 ?>
