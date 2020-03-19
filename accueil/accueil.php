@@ -13,13 +13,13 @@
 
 <div class="apart_accueil">
     <h2 class="content-img-accueil-text"> Vous recherchez <br> un coloc ? </h2>
-    <a href="../poster_un_appartement/poster_un_appartement.php"><input type="submit" name="" value="Découvrir" class="content-img-accueil-inp trajan butt"></a>
+    <a href="../poster_un_appartement/poster_un_appartement.php"><input type="submit" name="" value="Poster" class="content-img-accueil-inp trajan butt"></a>
 </div>
 
 <div class="int_accueil">
     <h2 class=""> Vous recherchez une colocation ? </h2>
     <p class="trajan"> Trouver une colocation de confiance avec ColocToi </p>
-    <a href="../recherche_colocation/recherche_colocation.php"><input type="submit" name="" value="Découvrir" class="trajan butt"></a>
+    <a href="../recherche_colocation/recherche_colocation.php"><input type="submit" name="" value="Rechercher" class="trajan butt"></a>
 </div>
 
 <section class="info">
