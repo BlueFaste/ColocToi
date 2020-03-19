@@ -7,6 +7,7 @@
     })
 </script>
 
+<!--Page non codée pas eu le temps-->
 
 <?php include('../footer/footer.php') ?>
 
