@@ -20,12 +20,13 @@
                                               id="logo"/></a>
     </h1>
     <nav class="">
-        <p><a href="../recherche_colocation/recherche_colocation.php"><img src="../img/header/loupe_recherche.png" alt="Recherche"/></a><a
+        <p><a href="../recherche_colocation/recherche_colocation.php"><img src="../img/header/loupe_recherche.png"
+                                                                           alt="Recherche"/></a><a
                     href="../recherche_colocation/recherche_colocation.php"> Recherche </a></p>
         <p><a href=""> Faites-nous confiance </a></p>
         <p><a href="../poster_un_appartement/poster_un_appartement.php"> Poster </a></p>
 		<?php if (!empty($_SESSION['log'])) { ?>
-<!--            si l'utilisateur est connecté, ce qu'on vérifie avec la variable $_SESSION['log'] le header est modifié-->
+            <!--            si l'utilisateur est connecté, ce qu'on vérifie avec la variable $_SESSION['log'] le header est modifié-->
             <p><a href=""> Mes publications </a></p>
             <p><a href=""> Mon compte </a></p>
             <p id="logOut"><a href="../logOut.php"> Déconnexion </a></p>

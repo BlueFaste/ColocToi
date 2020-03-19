@@ -1,62 +1,62 @@
 /*Caroline Fassot*/
 
-html{
-  /* background-color: blue; */
-  font-family: 'Segoe UI', serif;
+html {
+    /* background-color: blue; */
+    font-family: 'Segoe UI', serif;
 }
 
-div,p,a,h1,h2,h3,h4,h5{
+div, p, a, h1, h2, h3, h4, h5 {
 
-font-size: 1vw ;
+    font-size: 1vw;
 
 }
 
 /*===========*\
 #    HEADER    #======================================================================
 \*===========*/
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15vw;
-  background-color: white;
-  padding: 1vw 0;
-  margin-left: 3vw;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15vw;
+    background-color: white;
+    padding: 1vw 0;
+    margin-left: 3vw;
 }
 
-h1{
-  margin: 0;
+h1 {
+    margin: 0;
 }
 
-#logo{
-  width: 3vw;
+#logo {
+    width: 3vw;
 }
 
-header div{
-  margin-left: 1vw;
+header div {
+    margin-left: 1vw;
 }
 
-nav{
-  display: flex;
-  justify-content: space-between;
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 nav p {
-  margin: 0 1.5vw;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+    margin: 0 1.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-nav img{
-  width: 1.5vw;
-  margin: 0 1vw;
+nav img {
+    width: 1.5vw;
+    margin: 0 1vw;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 
@@ -64,19 +64,21 @@ a{
 #    COMMUNS AUX AUTRES PAGES    #======================================================================
 \*=============================*/
 
-input{
-  padding: 0.5vw 1.5vw ;
-  background-color: white;
-  border: solid 1px #C3C3C3;
+input {
+    padding: 0.5vw 1.5vw;
+    background-color: white;
+    border: solid 1px #C3C3C3;
 
 }
-input[type="submit"]{
-  cursor: pointer;
-}
-.trajan{
-font-family: trajan-pro-3, serif;
+
+input[type="submit"] {
+    cursor: pointer;
 }
 
-.worker{
-  font-family: Worker, serif;
+.trajan {
+    font-family: trajan-pro-3, serif;
+}
+
+.worker {
+    font-family: Worker, serif;
 }

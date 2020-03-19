@@ -9,20 +9,19 @@
     })
 </script>
 
-    <div class="apart_accueil">
-        <div class="carre">
+<div class="apart_accueil">
+    <div class="carre">
 
         <div class="motdepasse1">
-Mot de passe incorrect 
-          </div>
-    <form action="../connexion/connexion.php">
-        <input type="submit" name="" value="Valider" class="content-img-accueil-inp trajan butt" >
-    </form>
+            Mot de passe incorrect
+        </div>
+        <form action="../connexion/connexion.php">
+            <input type="submit" name="" value="Valider" class="content-img-accueil-inp trajan butt">
+        </form>
 
 
-        </div> 
     </div>
-
+</div>
 
 
 <?php require_once('../footer/footer.php') ?>

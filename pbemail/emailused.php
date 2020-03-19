@@ -9,20 +9,20 @@
     })
 </script>
 
-    <div class="apart_accueil">
-        <div class="carre">
+<div class="apart_accueil">
+    <div class="carre">
 
         <div class="motdepasse1">
             Email déjà utilisé !
-          </div>
-    <form action="../connexion/connexion.php">
-        <input type="submit" name="" value="Connectez-vous" class="content-img-accueil-inp trajan butt">
-    </form>
+        </div>
+        <form action="../connexion/connexion.php">
+            <input type="submit" name="" value="Connectez-vous" class="content-img-accueil-inp trajan butt">
+        </form>
 
-        </div> 
     </div>
+</div>
 
 
-<?php include('../footer/footer.php')?>
+<?php include('../footer/footer.php') ?>
 
 

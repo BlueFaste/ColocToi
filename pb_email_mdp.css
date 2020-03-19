@@ -2,58 +2,58 @@
 /*===========================================================================================*\
 #    CSS COMMUN AUX PAGES EMAILFALSE EMAILUSED EMAILERRONE MOTDEPASSEFALSE MOTDEPASSEOUBLIE    #======================================================================
 \*===========================================================================================*/
-  .apart_accueil{
-    background:no-repeat center center #707070;
+.apart_accueil {
+    background: no-repeat center center #707070;
     background-image: url('img/flou/maison2.jpg');
     background-size: cover;
 
-    text-align: center; 
-    display:flex;
+    text-align: center;
+    display: flex;
     justify-content: center;
-  }
+}
 
-  h2{
+h2 {
     font-family: Tahoma, Arial, serif;
     font-size: 60px;
-  }
-  
-  .formulaireensemble p{
+}
+
+.formulaireensemble p {
     font-family: Tahoma, serif;
     font-size: 2vw;
     font-weight: bold;
     margin-top: 3vw;
-  }
+}
 
-  .slog{
+.slog {
     margin-right: 5vw;
     font-size: 1.5vw;
-  }
+}
 
-  .content-img-accueil-text{
+.content-img-accueil-text {
     margin-right: 10vw;
     margin-top: 10vw;
     margin-bottom: 1vw;
-  }
+}
 
-  .carre{
-    width:500px;
-    height:500px;
-    background:white;
+.carre {
+    width: 500px;
+    height: 500px;
+    background: white;
     border: 2px solid black;
-    margin-top:50px;
+    margin-top: 50px;
     margin-bottom: 50px;
-  }
+}
 
-  .motdepasse1{ 
-color:red;
-margin-top:180px;
-  }
+.motdepasse1 {
+    color: red;
+    margin-top: 180px;
+}
 
-  .content-img-accueil-inp {
+.content-img-accueil-inp {
 
-    margin-top:80px;
-  }
+    margin-top: 80px;
+}
 
-  .email{
-    margin-top:5vh;
-  }
+.email {
+    margin-top: 5vh;
+}

@@ -140,7 +140,7 @@
             <div class="champ1">
                 <div class="nom">
                     <label for="name">Nom:</label><br>
-                    <input type="text" name="nom" placeholder="Votre nom" id="name" required >
+                    <input type="text" name="nom" placeholder="Votre nom" id="name" required>
                 </div>
                 <div class="prenom">
                     <label for="firstName">Prenom:</label><br>
@@ -179,11 +179,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-    <?php if (!empty($_SESSION['log'])){ ?>
-    //Permet de mettre automatiquent les nom prenom et mail dans les cases si l'utilisateur est connecté.
-    $('#name').attr('value', '<?php echo $_SESSION['log']['nom'] ?>');
-    $('#firstName').attr('value', '<?php echo $_SESSION['log']['prenom'] ?>');
-    $('#mail').attr('value', '<?php echo $_SESSION['log']['mail'] ?>');
-    <?php  } ?>
+		<?php if (!empty($_SESSION['log'])){ ?>
+        //Permet de mettre automatiquent les nom prenom et mail dans les cases si l'utilisateur est connecté.
+        $('#name').attr('value', '<?php echo $_SESSION['log']['nom'] ?>');
+        $('#firstName').attr('value', '<?php echo $_SESSION['log']['prenom'] ?>');
+        $('#mail').attr('value', '<?php echo $_SESSION['log']['mail'] ?>');
+		<?php  } ?>
     })
 </script>

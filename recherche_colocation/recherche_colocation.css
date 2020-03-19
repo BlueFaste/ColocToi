@@ -1,65 +1,65 @@
 /*Caroline Fassot*/
-.apart_accueil{
-  background:no-repeat center center #707070;
-  background-size: cover;
-  text-align: center;
-  height: 529px;
-  background-image: url('../img/recherche_colocation/appart.jpg');
-  align-items: flex-end;
-  display: flex;
-  flex-direction: column;
+.apart_accueil {
+    background: no-repeat center center #707070;
+    background-size: cover;
+    text-align: center;
+    height: 529px;
+    background-image: url('../img/recherche_colocation/appart.jpg');
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
 }
 
-.content-img-accueil-text{
-  margin-right: 10vw;
-  margin-top: 10vw;
-  margin-bottom: 1vw;
+.content-img-accueil-text {
+    margin-right: 10vw;
+    margin-top: 10vw;
+    margin-bottom: 1vw;
 }
 
-.content-img-accueil-inp{
-  margin-right: 20vw;
+.content-img-accueil-inp {
+    margin-right: 20vw;
 }
 
-h2{
-  font-family: Tahoma, serif;
-  font-size: 60px;
+h2 {
+    font-family: Tahoma, serif;
+    font-size: 60px;
 }
 
-.slog{
-  margin-right: 5vw;
-  font-size: 1.5vw;
+.slog {
+    margin-right: 5vw;
+    font-size: 1.5vw;
 }
 
 
-.formulaire_colocation{
-  background-color: #E9F4FF;
-  text-align: center;
-  padding: 2vw 30vw;
+.formulaire_colocation {
+    background-color: #E9F4FF;
+    text-align: center;
+    padding: 2vw 30vw;
 }
 
-.formulaire_colocation p{
-  font-family: Tahoma, serif;
-  font-size: 3vw;
-  font-weight: bold;
-  margin-top: 0;
+.formulaire_colocation p {
+    font-family: Tahoma, serif;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
 }
 
-.formulaire_colocation form div{
-  display: flex;
-  flex-direction: column;
-  /* margin: 0 35vw; */
+.formulaire_colocation form div {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 35vw; */
 }
 
-.formulaire_colocation input:not(#loyer), .formulaire_colocation select{
-  height: 2vw;
-  margin: 1vw;
+.formulaire_colocation input:not(#loyer), .formulaire_colocation select {
+    height: 2vw;
+    margin: 1vw;
 }
 
-.formulaire_colocation span{
-  margin-bottom: 1vw ;
+.formulaire_colocation span {
+    margin-bottom: 1vw;
 }
 
-.trajan{
-  margin: 6vh 6vw;
-  height: 2.5vw;
+.trajan {
+    margin: 6vh 6vw;
+    height: 2.5vw;
 }

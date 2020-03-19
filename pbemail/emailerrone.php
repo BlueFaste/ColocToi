@@ -9,18 +9,18 @@
     })
 </script>
 
-    <div class="apart_accueil">
-        <div class="carre">
+<div class="apart_accueil">
+    <div class="carre">
 
         <div class="motdepasse1">
             Vous n'avez pas entré de mail valide
-          </div>
-    <form action="../inscription/Inscriptionf.php">
-        <input type="submit" name="" value="Réessayer" class="content-img-accueil-inp trajan butt">
-    </form>
+        </div>
+        <form action="../inscription/Inscriptionf.php">
+            <input type="submit" name="" value="Réessayer" class="content-img-accueil-inp trajan butt">
+        </form>
 
-        </div> 
     </div>
+</div>
 
 
-<?php include('../footer/footer.php')?>
+<?php include('../footer/footer.php') ?>

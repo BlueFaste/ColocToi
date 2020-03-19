@@ -31,7 +31,8 @@
     <div class="footer_down">
         <p>Coloctoi, 2020@</p>
         <div class="RS">
-            <a href="https://twitter.com/AschardF" target="_blank"><img src="../img/footer/TWITTER.png" alt="Twitter"></a>
+            <a href="https://twitter.com/AschardF" target="_blank"><img src="../img/footer/TWITTER.png"
+                                                                        alt="Twitter"></a>
             <a href="https://www.instagram.com/coloctoi/" target="_blank"><img src="../img/footer/INSTAGRAM.png"
                                                                                alt="Instagram"></a>
             <a href="https://twitter.com/CarolineFassot" target="_blank"><img src="../img/footer/FACEBOOK.png"

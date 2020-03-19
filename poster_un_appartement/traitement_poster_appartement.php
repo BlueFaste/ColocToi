@@ -2,7 +2,7 @@
 <?php session_start();
 include('../lienversbdd.php');
 
-function ajoutBDD($connexion, $array)
+function ajoutBDD(PDO $connexion, $array)
 {
 	$req = $connexion->prepare('INSERT INTO `appartement`(`id_proprietaire`, `heure_de_poste`, `jour_de_post`, `titre`, `ville`, `adresse`,`code_postal`, `type_logement`, `superficie`, `nb_piece`, `nb_coloc_max`, `nb_coloc_rech`, `meuble`, `loyer`, `charges`, `descritpion`, `classe_energetique`, `ges`, `img1`, `img2`, `img3`, `img4`)  VALUES (:id_proprietaire, :heure_de_poste, :jour_de_poste, :titre, :ville, :adresse, :code_postal, :type_logement, :superficie, :nb_piece, :nb_coloc_max, :nb_coloc_rech, :meuble, :loyer, :charges, :descritpion, :classe_energetique, :ges, :img1, :img2, :img3, :img4)');
 

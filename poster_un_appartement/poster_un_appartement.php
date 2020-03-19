@@ -192,9 +192,21 @@ if (!$_SESSION['log']) {
 
             $("#file-input1").change(function () {
                 // Action s'exécutant des qu'une valeur de tes inputs est changées
-              $("#img1").attr('src','../img/icones/appreil2.png')
+                $("#img1").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
             });
         });
     </script>
 
 <?php } ?>
+
+
+
+
+
+
+
+
+
+
+
+

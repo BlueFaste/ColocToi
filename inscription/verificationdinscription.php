@@ -43,7 +43,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 			if ($verif == true) {
 				$hasmdp = password_hash($_POST['mdpregister'], PASSWORD_BCRYPT);
 				$req = $connexion->prepare('INSERT INTO membre(nom,prenom,mail,mdp,tel) VALUES(:nom,:prenom,:mail,:mdp,:tel)');
-				//c'est ici que l'on rentre les informations dans la base de donnée
+				//c'est ici que l'on rentre les informations dans la base de données
 				$req->execute([
 
 					':nom' => $_POST['nomregister'],
@@ -51,7 +51,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 					':mail' => $_SESSION['mail'],
 					':mdp' => $hasmdp,
 					':tel' => "0000000000",
-					//entrer les nouvelles colonnes de la base de donnée ici, ne pas oublier de modifier la ligne ci-dessus (avec VALUES etc...)
+					//entrer les nouvelles colonnes de la base de données ici, ne pas oublier de modifier la ligne ci-dessus (avec VALUES etc...)
 
 				]);
 

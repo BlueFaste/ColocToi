@@ -1,5 +1,5 @@
 # Caroline Fassot
-# Pour créer la base de donnée, on drop celle existante et on la recréer
+# Pour créer la base de données, on drop celle existante et on la recréer
 DROP DATABASE IF EXISTS `coloctoi`;
 CREATE DATABASE `coloctoi` CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `coloctoi`;
