@@ -7,7 +7,6 @@
 }
 
 
-/*pas toucher */
 .apart_accueil {
     background: no-repeat center center #707070;
     background-image: url('../img/recherche_colocation/appart.jpg');
@@ -23,7 +22,6 @@
     position: relative;
 }
 
-/*fin de pas toucher */
 
 .carre {
     position: absolute;

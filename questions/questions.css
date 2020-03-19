@@ -192,7 +192,7 @@ margin-left:50px;
 .premierspas{
   display: flex;
 }
-/*pas toucher */
+
   .apart_accueil{
     background:no-repeat center center #707070;
     background-image: url('../img/questions/appart.jpg');
@@ -235,6 +235,5 @@ margin-left:50px;
   .champ1, .champ2{
     display: flex;
   }
-  /*fin de pas toucher */
 
   

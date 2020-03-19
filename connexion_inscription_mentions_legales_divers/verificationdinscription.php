@@ -35,7 +35,7 @@ if (isset($_POST['nomregister'], $_POST['prenomregister'], $_POST['mdpregister']
 			if (count($tableau) > 0) {
 				$verif = false;
 			}
-			// si l'eamil n'existe pas alors on peut rentrer les informations
+			// si l'email n'existe pas alors on peut rentrer les informations
 			if ($verif == true) {
 				$hasmdp = password_hash($_POST['mdpregister'], PASSWORD_BCRYPT);
 				$req = $connexion->prepare('INSERT INTO membre(nom,prenom,mail,mdp,tel) VALUES(:nom,:prenom,:mail,:mdp,:tel)');
