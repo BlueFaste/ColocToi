@@ -139,19 +139,19 @@ if (!$_SESSION['log']) {
 
                 <div class="image-upload">
                     <label for="file-input2">
-                        <img src="../img/icones/appreil.png" alt="ajouter une image" id="" class="icone">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" id="img2" class="icone">
                     </label>
                     <input id="file-input2" type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>
                 </div>
                 <div class="image-upload">
                     <label for="file-input3">
-                        <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" id="img3" class="icone">
                     </label>
                     <input id="file-input3" type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>
                 </div>
                 <div class="image-upload">
                     <label for="file-input4">
-                        <img src="../img/icones/appreil.png" alt="ajouter une image" class="icone">
+                        <img src="../img/icones/appreil.png" alt="ajouter une image" id="img4" class="icone">
                     </label>
                     <input id="file-input4" type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>
                 </div>
@@ -193,6 +193,18 @@ if (!$_SESSION['log']) {
             $("#file-input1").change(function () {
                 // Action s'exécutant des qu'une valeur de tes inputs est changées
                 $("#img1").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
+            });
+            $("#file-input2").change(function () {
+                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                $("#img2").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
+            });
+            $("#file-input3").change(function () {
+                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                $("#img3").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
+            });
+            $("#file-input4").change(function () {
+                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                $("#img4").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
             });
         });
     </script>
