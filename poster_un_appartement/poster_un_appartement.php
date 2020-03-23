@@ -1,14 +1,15 @@
 <!--Caroline Fassot-->
 <?php $pageName = 'ColocToi - Poster une colocation'; ?>
 <?php include('../header/header.php');
-// si l'utilisatuer n'est pas connecté alors on le redirige vers la page de connexion
+// si l'utilisatuer n'est pas connecté, alors on le redirige vers la page de connexion
 if (!$_SESSION['log']) {
+    //header ( 'Location: chemin d'accès d'une page') permet une redirection vers la page qui correspond au chemin d'accès
 	header('Location: ../connexion/connexion.php');
 } else {
 	?>
 
     <script type="text/javascript">
-        // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
+        // inclusion des feuilles de style de pages dans le head avec la ligne de code ci-dessous
         $(document).ready(function () {
             $('head').append('<link rel="stylesheet" href="poster_un_appartement.css">');
         })
@@ -121,19 +122,15 @@ if (!$_SESSION['log']) {
 
         <div class="ajout_img">
             <p>Ajouter des photos</p>
-            <input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
             <!-- empêche l'ajout d'image dont le poids est supérieur à 1 000 000 octets à mettre pour que le $_FILES['img]['name'] marche']-->
-            <!--            Provisoir, on est sensé cliquer sur l'image de l'appareil photo pour ajouter une photo-->
-            <!--            <input type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="test" required/>-->
-            <!--            <input type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>-->
-            <!--            <input type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>-->
-            <!--            <input type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>-->
+            <input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
+            <!-- le code suivant permet de faire un input file mais en cliquant sur l'image -->
             <div class="div_ajout_img">
                 <div class="image-upload">
                     <label for="file-input1">
                         <img src="../img/icones/appreil.png" alt="ajouter une image" id="img1" class="icone">
                     </label>
-                    <input id="file-input1" type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="test"
+                    <input id="file-input1" type="file" name="img1" accept=".jpg, .jpeg, .png" value="" class="imgInput"
                            required/>
                 </div>
 
@@ -141,19 +138,19 @@ if (!$_SESSION['log']) {
                     <label for="file-input2">
                         <img src="../img/icones/appreil.png" alt="ajouter une image" id="img2" class="icone">
                     </label>
-                    <input id="file-input2" type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="test"/>
+                    <input id="file-input2" type="file" name="img2" accept=".jpg, .jpeg, .png" value="" class="imgInput"/>
                 </div>
                 <div class="image-upload">
                     <label for="file-input3">
                         <img src="../img/icones/appreil.png" alt="ajouter une image" id="img3" class="icone">
                     </label>
-                    <input id="file-input3" type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="test"/>
+                    <input id="file-input3" type="file" name="img3" accept=".jpg, .jpeg, .png" value="" class="imgInput"/>
                 </div>
                 <div class="image-upload">
                     <label for="file-input4">
                         <img src="../img/icones/appreil.png" alt="ajouter une image" id="img4" class="icone">
                     </label>
-                    <input id="file-input4" type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="test"/>
+                    <input id="file-input4" type="file" name="img4" accept=".jpg, .jpeg, .png" value="" class="imgInput"/>
                 </div>
             </div>
         </div>
@@ -167,7 +164,7 @@ if (!$_SESSION['log']) {
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $(function () { //autocomplete
+            $(function () { //autocomplete le input ville
                 var availableTags = [
                     "Paris",
                     "Marseille",
@@ -191,19 +188,19 @@ if (!$_SESSION['log']) {
 
 
             $("#file-input1").change(function () {
-                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                // Action s'exécutant dès qu'une valeur des inputs est changées
                 $("#img1").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
             });
             $("#file-input2").change(function () {
-                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                // Action s'exécutant dès qu'une valeur des inputs est changées
                 $("#img2").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
             });
             $("#file-input3").change(function () {
-                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                // Action s'exécutant dès qu'une valeur des inputs est changées
                 $("#img3").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
             });
             $("#file-input4").change(function () {
-                // Action s'exécutant des qu'une valeur de tes inputs est changées
+                // Action s'exécutant dès qu'une valeur des inputs est changées
                 $("#img4").attr('src', '../img/icones/appreil2.png').attr('alt', 'Image ajoutée');
             });
         });

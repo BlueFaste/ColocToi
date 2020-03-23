@@ -2,7 +2,7 @@
 <?php $pageName='ColocToi - Chercher une colocation'; ?>
 <?php require_once('../header/header.php') ?>
 <script type="text/javascript">
-    // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
+    // inclusion des feuilles de style de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function(){
         $('head').append('<link rel="stylesheet" href="../stylecreationf.css">');
     })

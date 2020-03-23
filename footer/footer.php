@@ -1,6 +1,6 @@
 <!--Caroline Fassot-->
 <script type="text/javascript">
-    // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
+    // inclusion des feuilles de style de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="../footer/footer.css">');
     })

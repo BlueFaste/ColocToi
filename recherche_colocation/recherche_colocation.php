@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        // inclusion des feuilles de styles de pages dans le head avec la ligne de code ci-dessous
+        // inclusion des feuilles de style de pages dans le head avec la ligne de code ci-dessous
         $('head').append('<link rel="stylesheet" href="recherche_colocation.css">');
     })
 </script>

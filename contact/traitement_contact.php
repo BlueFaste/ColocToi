@@ -13,8 +13,9 @@ function ajoutBDD(PDO $connexion, $array)
 
 if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['sujet'], $_POST['message'])) {
 	if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['email']) || empty($_POST['sujet']) || empty($_POST['message'])) {
-		echo "pb";
+		echo "Toutes les cases ne sont pas remplites, il faut les remplir";
 	} else {
+	    //on stock les valeurs à ajouter dans la BDD dans un tableau pour pouvoir ajouter le bon ID selon le cas
 		$array = array(
 			":nom" => $_POST['nom'],
 			":prenom" => $_POST['prenom'],
@@ -25,13 +26,14 @@ if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['sujet'], $_P
 		if (!empty($_SESSION['log'])) {
 			$array[":id_utilisateur"] = $_SESSION['log']['id'];
 		} else {
+		    // si l'utilisatuer n'est pas connecté pour poser sa question, on met l'od utilisatuer a 1 qui correspond au UserNoLogIn
 			$array[":id_utilisateur"] = 1;
 
 		}
 		ajoutBDD($connexion, $array);
 	}
 } else {
-	echo "probleme avec isset";
+	echo "probleme avec isset, normalement impossible sauf modification du code";
 }
 
 ?>

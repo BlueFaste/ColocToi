@@ -31,7 +31,6 @@ function verifImg($imgName, $imgTmp)
 		//dans $fichier par un tiret "-" et qui place le résultat dans $fichier.
 		$imgName = preg_replace('/([^.a-z0-9]+)/i', '-', $imgName);
 
-//    echo "<p>image :</p>".$imgName;
 
 		$chemin_img = "../img/upload/appart/" . $imgName;
 		move_uploaded_file($imgTmp, $chemin_img);
@@ -84,7 +83,7 @@ if (isset($_POST['titre'], $_POST['ville'], $_POST['adresse'], $_POST['code_post
 		$heure_poste = date("h:i:s");
 		// var_dump($id_prop=$_SESSION['log']['id']);
 		$id_prop = $_SESSION['log']['id'];
-		// on crèe un tableau pour pouvoir ajouter ou non les chemins des images si elles ont été ajoutés par l'utilisateur
+		// on crèe un tableau pour pouvoir ajouter ou non les chemins des images si elles ont été ajoutées par l'utilisateur
 		$array = array(
 			":id_proprietaire" => $id_prop,
 			":heure_de_poste" => $heure_poste,
@@ -116,6 +115,7 @@ if (isset($_POST['titre'], $_POST['ville'], $_POST['adresse'], $_POST['code_post
 		// var_dump($_FILES['img3']['name']);
 		// var_dump($_FILES['img4']['name']);
 
+        // ce code contient un bug, si l'utilisatuer complète l'input img3 et pas l'input img2 l'image img3 ne sera pas ajoutée, mais en sortant les if des uns des autres, c'est lors du select des img pour les afficher où un problème se posera
 		if (!empty($_FILES['img1']['name'])) {
 			$chemin_img1 = verifImg($_FILES['img1']['name'], $_FILES['img1']['tmp_name']);
 			$array[":img1"] = $chemin_img1;

@@ -10,13 +10,13 @@ if (isset($_POST['ville'], $_POST['loyer'], $_POST['type_logement'], $_POST['nb_
 		//La ville est obligatoirement remplite sinon le formulaire ne s'envoit pas (sauf si un petit malin modifie le code )
 		//on créer la variable enter qui va contenir le la partie VALUE de la requète MySQL
 		// on créer un tableau qui lui sera utilisé lors de l'execution de la requète
-		//UPPER permet de tout de mettre en majuscule lors de la recherche sql, ignore la case
+		//UPPER permet de tout de mettre en majuscule lors de la recherche sql, ignore la case (case= si mot contient des majs)
 		// (en bref il peut écrire la ville avec des majuscule n'importe où)
 		$enter = " UPPER(ville) = UPPER(:ville)";
 		$array[":ville"] = $_POST['ville'];
 
 		if (!empty($_POST['loyer'])) {
-			//si empty n'est pas vide, on complete enter et le tableau sinon on ne fait rien
+			//si loyer n'est pas vide, on complète $enter et le tableau sinon on ne fait rien. $enter étant les valeurs apres VALUES de la commande INSERT INTO
 			$enter .= " AND loyer=:loyer";
 			$array[":loyer"] = $_POST['loyer'];
 		}

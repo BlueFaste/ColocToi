@@ -2,10 +2,10 @@
 
 <?php $pageName = 'ColocToi - Accueil'; ?>
 <?php require_once('../header/header.php') ?>
-<!--On donne un nom à la page en donnant une valuer à la variable pageName puis on inclut le header-->
+<!--On donne un nom à la page en donnant une valeur à la variable pageName puis on inclut le header-->
 
 <script type="text/javascript">
-    // inclusion des feuilles de styles de pages dans le header avec la ligne de code ci-dessous
+    // inclusion des feuilles de style de pages dans le head avec la ligne de code ci-dessous
     $(document).ready(function () {
         $('head').append('<link rel="stylesheet" href="accueil.css">');
     })
@@ -56,7 +56,7 @@
             dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam es</p>
     </div>
 </section>
-<!--Pas le temps mais possibilité de coder la partie ci-dessous avec un composant Vue-->
+<!--Pas le temps, mais possibilité de coder la partie ci-dessous avec un composant Vue-->
 <section class="search_coloc">
     <h3> Ils recherchent un colocataire ! </h3>
     <div class="coloc">
